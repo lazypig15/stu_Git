@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.3d图形变换</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .state{
+        width: 200px;
+        height: 200px;
+        /* background-color: aqua; */
+        margin: 100px auto;
+        /* 设置透视距离，即观察者距离平面[z=0]的距离，让元素形成透视效果 不允许为负值 */
+        perspective: 2000px;
+        /* 设置观察者的位置，用法与transform-origin类似 */
+        /* perspective-origin: 5% 50%; */
+    }
+    .container{
+        /* 设置元素实在平面还是在三维空间，preserve-3d指定元素在三维空间 ，flat默认值指元素在为二维空间 */
+        transform-style: preserve-3d;
+        position: relative;
+        /* transform: rotateX(-45deg) rotateZ(-45deg); */
+        width: 200px;
+        height: 200px;
+        animation: rotate 3s linear infinite;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotateX(0deg) ;
+        }
+        20%{
+            transform: rotateX(90deg) ;
+        }
+        40%{
+            transform: rotateY(90deg) ;
+        }
+         60%{
+            transform: rotateX(-90deg) ;
+        }
+        80%{
+            transform: rotateY(-90deg) ;
+        }
+        100%{
+            transform: rotateY(-180deg) ;
+        }
+    }
+    
+    .right{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        /* background-color: green; */
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .left{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        /* background-color: red; */
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .front{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        /* background-color: grey; */
+        transform: translateZ(100px);
+    }
+    .behind{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        /* background-color: #ff6700; */
+        transform: rotateY(-180deg) translateZ(100px);
+    }
+    .top{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        /* background-color: pink; */
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .bottom{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        /* background-color: purple; */
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        opacity: .9;
+    }
+    /* .state:hover .container{
+        transform: rotateX(180deg) ;
+    }
+    .state:active .container{
+        transform: rotateY(180deg) ;
+    } */
+</style>
+<body>
+    <ul>
+        <li class="state">
+            <div class="container">
+                <p class="top"><img src="./imgs/1.jpg" alt=""></p>
+                <p class="left"><img src="./imgs/2.jpg" alt=""></p>
+                <p class="front"><img src="./imgs/3.jpg" alt=""></p>
+                <p class="bottom"><img src="./imgs/7.jpg" alt=""></p>
+                <p class="right"><img src="./imgs/5.jpg" alt=""></p>
+                <p class="behind"><img src="./imgs/6.jpg" alt=""></p>
+            </div>
+        </li>
+    </ul>
+        
+</body>
+</html>

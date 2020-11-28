@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.相对定位</title>
+</head>
+<style>
+    body{
+        /* 去掉body自带的8px外边距 */
+        margin: 0;
+        
+    }
+    div{
+        width: 200px;
+        height: 200px;
+    }
+   .d1{
+        background-color: red;
+    }
+  
+    .d2{
+        background-color: rgb(76, 105, 124);
+       /* position设置定位方式 */
+       /* static是静态定位 是元素默认的定位方式 ，不可以移动位置 */
+       /* relative 相对定位 相对定位相对于自身原有的位置进行移动，自身原有位置保留 ，依旧在文档流中参与流式布局*/
+       /* 相对定位用于轻微的元素位置调整 */
+
+        position: relative;
+        top: 100px;
+        left: 200px;
+    
+    }
+    .d3{
+        background-color: rgb(0, 255, 64);
+    }
+</style>
+<body>
+    <div class="d1"></div>
+    <div class="d2">相对定位</div>
+    <div class="d3"></div>
+</body>
+</html>

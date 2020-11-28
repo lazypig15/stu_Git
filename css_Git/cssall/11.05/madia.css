@@ -1,0 +1,5 @@
+@media not screen and (max-width: 600px) {
+    div::after{
+        content: '----页面尺寸不小于600 ';
+    }
+}

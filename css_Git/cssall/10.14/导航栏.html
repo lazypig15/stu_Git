@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #d2{
+        background-color: #01204f;
+        /* width: 100%; */
+        /* margin-top: 100px; */
+    }
+    #d1{
+        padding: 31px 0 25px 0;
+    }
+    ul{
+        list-style: none;
+        width: 984px;
+        height: 40px;
+        margin: 0 auto;
+        zoom: 1;
+    }
+    li{
+         box-sizing: border-box;
+        font-size: 14px;
+        float: left;
+    }
+    li:hover{
+        background-color: #cc0000;
+    }
+    ul::after{
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+    .l0{
+        width: 68px;
+        height: 40px;
+        background-color: #cc0000;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        line-height: 40px;
+        padding-left: 30px;
+        padding-right: 10px;
+        background-image: url('./images/icon-index_20aa3cd.png');
+        background-repeat: no-repeat;
+        background-position: 6px 7px;
+    }
+    .l1{
+        width: 48px;
+        height: 40px;
+        padding: 0px 10px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .l2{
+        width: 62px;
+        height: 40px;
+        padding: 0px 10px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    img{
+        width: 135px;
+        height: 45px;
+        border: 0;
+        
+        margin-left: 350px;
+    }
+    #word{
+        width: 643px;
+        height: 38px;
+        display: inline-block;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #38f;
+        border-right: 0 none;
+        vertical-align: top;
+        background-color: #fff;
+        margin-left: 10px;
+        margin-top: 7px;
+     }
+     #in1{
+         border: none;
+         width: 534px;
+         height: 37px;
+         
+     }
+     #in2{
+        border: none;
+        width: 104px;
+        height: 39px;
+        line-height: 32px;
+        background-color: #38f;
+        color: white;
+        font-size: 15px;
+        
+     }
+</style>
+<body>
+    <div id="d1">
+         <img src="./images/logo_news_276_88_1f9876a.png" alt="">
+        <span id="word">
+            <input type="text"id="in1">
+            <input type="button"id="in2"value="百度一下">
+        </span>
+        
+    </div>
+    <div id="d2">
+        <ul>
+            <li class="l0">首页</li>
+            <li class="l1">国内</li>
+            <li class="l1">国际</li>
+            <li class="l1">军事</li>
+            <li class="l1">财经</li>
+            <li class="l1">娱乐</li>
+            <li class="l1">体育</li>
+            <li class="l2">互联网</li>
+            <li class="l1">科技</li>
+            <li class="l1">游戏</li>
+            <li class="l1">女人</li>
+            <li class="l1">汽车</li>
+            <li class="l1">房产</li>
+        </ul>
+    </div>
+</body>
+</html>

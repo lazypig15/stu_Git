@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tencent_news</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .title_border{
+        background-color: #f8f8f9;
+        height: 276.2px;
+        margin-top: 50px;
+    }
+    .container{
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    h1{
+        width: 900px;
+        height: 177.2px;
+        box-sizing: border-box;
+        padding: 41px 0 21px;
+        font-size: 40px;
+    }
+    .information{
+        width: 650px;
+        height: 49px;
+        margin-right: 250px;
+    }
+    .information_pic{
+        width: 47px;
+        height: 47px;
+        margin-right: 15px;
+        padding: 1px 0;
+    }
+    .information>div{
+        float: left;
+    }
+    .information_pic>a>img{
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+    }
+    .today{
+        width: 358px;
+        height: 20px;
+        margin: 3px 0 5px;
+        font-size: 16px;
+    }
+    .today:hover a{
+        text-decoration: underline;
+    }
+    .today+div{
+        width: 358px;
+        height: 16px;
+        font-size: 12px;
+        color: #999;
+    }
+    .item1{
+        margin-right: 9px;
+    }
+    .item3{
+
+        box-sizing: border-box;
+        margin-left: 8px;
+        border-left: 1px solid #eee;;
+        padding-left: 8px;
+    }
+    .left{
+        width: 650px;
+        border-right: 1px solid#eee;
+        box-sizing: border-box;
+        padding-right: 50px;
+        font-size: 16px;
+        line-height: 24px;
+        float: left;
+    }
+    .left>div{
+        width: 600px;
+        box-sizing: border-box;
+        /* height: 800px; */
+        padding: 40px 0 30px;
+        /* background-color: aqua; */
+    }
+    .right{
+        width: 200px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 40px 0 30px;
+        float: left;
+    }
+    .right>div{
+        width: 200px;
+        height: 800px;
+        padding-left: 49px;
+        float: left;
+    }
+    .pic_adress{
+        margin-top: 30px;
+    }
+    .pic_adress>img{
+        width: 600px;
+    }
+    .name{
+        font-size: 13px;
+        color: #999;
+        display: block;
+        margin-top: 11px;
+        line-height: 13px;
+        text-align: center;
+    }
+    .p{
+        margin-top: 26px ;
+    }
+    button{
+        float: right;
+        margin-bottom: 20px;
+        font-size: 12px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    ul{
+        list-style: none;
+        width: 200px;
+        height: 1012px;
+    }
+    .recommend{
+        width: 200px;
+    }
+    .recommend>div>a{
+        width: 200px;
+        cursor: pointer;
+        overflow: hidden;/*内容溢出隐藏*/
+        text-overflow: ellipsis;   
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical
+    }
+    .recommend>div>a:hover,.baidu:hover,.login:hover{
+        text-decoration: underline;
+    }
+    .recommend>div>img{
+        width: 200px;
+        height: 112px;
+    }
+    li{
+        box-sizing: border-box;
+        padding: 20px 0;
+        width: 200px;
+        height: 202.6px;
+    }
+    .line{
+        width: 100%;
+        height: 80px;
+        border-top: solid 1px #eee;
+    }
+    nav{
+        /* background-color: aqua; */
+        height: 50px;
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        background-color: #f8f8f9;
+        margin: 0 auto;
+        top: 0;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 1px 1px 1px  #eee; 
+    }
+    .nav_l{
+        margin-top: 11px;
+        padding-left: 40px;
+        float: left;
+    }
+    .nav_r{
+        float: right;
+        margin: 17px 0;
+        box-sizing: border-box;
+        padding-right: 40px;
+        float: right;
+        width: 197px;
+        height: 16px;
+    }
+    .nav_l>a>img{
+        width: 81px;
+        height: 27px;
+    }
+    .baidu{
+        margin-right: 30px;
+    }
+    .login{
+        margin-left: 26px;
+    }
+</style>
+<body>
+    <nav>
+        <div class="nav_l"><a href="#"><img src="http://ss.bdimg.com/static/superlanding/img/logo_top.png" alt=""></a></div>
+        <div class="nav_r">
+            <a href="#" class="baidu">百度首页</a>
+            <a href="#" class="login">登录</a>
+        </div>
+    </nav>
+    <div class="title_border">
+        <div class="container">
+            <div><h1>看张雨绮穿“黑色圆领服”，把高光涂在锁骨上，效果至少年轻5岁</h1></div>
+            <div class="information">
+                <div class="information_pic">
+                    <a href="#"><img src="https://pic.rmb.bdstatic.com/bjh/user/be431baca5b04ca89c78c62c10defacb.jpeg" alt=""></a>
+                </div>
+                <div>
+                    <div class="today"><a href="#">今日圈内事</a></div>
+                    <div>
+                        <span class="item1">发布时间：08-01</span>
+                        <span class="item2">16:41</span>
+                        <span class="item3">山西广播电视台旗下帐号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div>
+                <p>最近频上热搜的张雨绮深受大家的关注，现在的她人气非常的高，真是火爆至极，参加了很多的综艺节目，其中最受喜爱的便是《乘风破浪的姐姐》，相信大家也都观看了她的表现，坦率、真实的性格以及出色的表演，深受大家的喜爱。</p>
+                <div class="pic_adress">
+                    <img src="http://pics5.baidu.com/feed/838ba61ea8d3fd1f8f6d8d378c7d2a1895ca5f15.jpeg?token=f598e6e4f386298118202f4ba387674f" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">张雨绮之所以被大家所喜欢，跟她真实、坦率的性格有很大的关系，她一直要求自己要做真实的自我，而现实中的她就是那样的呆萌、可爱，虽然也有很多的黑粉吐槽，但是张雨绮就是那样的真实，一直把最好的自己展示给大家。</p>
+                <div class="pic_adress">
+                    <img src="http://pics7.baidu.com/feed/0d338744ebf81a4c5548a7526c196f5e242da6e9.jpeg?token=e78be819835d95973d85958f6d20a1ef" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">最近的她有参加了一档综艺节目，而且还专门拍摄了新的宣传片，拍摄过程中她盛装出镜，打扮得也非常的漂亮，再加上她完美的身材，再次美出了新的高度。</p>
+                <div class="pic_adress">
+                    <img src="http://pics1.baidu.com/feed/b58f8c5494eef01f794daad25ccd9622bc317d02.jpeg?token=cfd9fe7f9e0484500990c4c698f5db1a" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">张雨绮无论从长相还是身材上都是特别的端正，如果经常关注张雨绮的观众会知道，她一般都会化淡妆，而这次也是如此，一个简单而不失优雅的淡妆，彰显了自身的气质和魅力。</p>
+                <div class="pic_adress">
+                    <img src="http://pics2.baidu.com/feed/9922720e0cf3d7cad962de104e2cb10e6a63a9ff.jpeg?token=da5b708f8dc80122c3dca3ec53a6f404" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">不过细心的观众会发现一些小的细节，这次的张雨绮穿了一件黑色圆领的礼服，高贵而优雅，再加上自己雪白的皮肤，一黑一白的对照显得她更加的迷人。最让人意想不到的是，张雨绮为了凸显他的锁骨，竟然把高光涂在了锁骨上，惊艳了众人，网友更是称赞“绝美”。</p>
+                <div class="pic_adress">
+                    <img src="http://t12.baidu.com/it/u=3373120607,1183167376&fm=173&app=49&f=JPEG?w=640&h=641&s=6A596A8E840250FE4C9122B303001006" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">对于平常的女生来说，高光这东西会涂在脸上，来提升自己的气质，万万没想到的是张雨绮竟然把它涂在了锁骨上，来增加锁骨的立体感，可真是美绝了，这样的装束一下子就显得年轻了五岁。在这里不得不夸赞一下张雨绮的化妆师，能够抓住张雨绮的特点，突出她比较美的地方，博得观众的眼球。</p>
+                <div class="pic_adress">
+                    <img src="http://pics3.baidu.com/feed/a8773912b31bb051a06e61a68a49d5b34bede0b5.jpeg?token=cc43c7df6d88b2b2864f8ce193b03e2c" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p>而在这档节目上也谈到了自己的感情状态，他大方真实的“我看男人的眼光不是太好，”这句话饱含了她多少的心酸，不禁为她感到伤心，大家一定都会知道张雨绮的感情之路一直很坎坷，这也是众所周知的事情，如此令人心动的女人却没能拥有一段好的爱情，确实让人感到惋惜。</p>
+                <div class="pic_adress">
+                    <img src="http://pics0.baidu.com/feed/b03533fa828ba61eaa8c1cf8fe07980d314e5945.jpeg?token=5996d76b4f2927fafd7db4d9203796f9" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">也正如她自己所言，她看男人的眼光一直不是很好，所以不管是爱情还是婚姻，她始终没有找到自己合适的那个人。</p>
+                <div class="pic_adress">
+                    <img src="http://pics5.baidu.com/feed/8b82b9014a90f603048c6be98421bc1cb051ed1f.jpeg?token=39282bea84d844a7905f2e4c67b3eaf8&s=B622D54F8E5A12DEF1ACE53A0300401B" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">但是令人钦佩的是她不曾被自己的婚姻所打败，而且还能拿出来侃侃而谈，足以证明她内心的强大，勇敢的面对着现实，接受自己的不足之处，敢于说出自己不好的一面，而这就是最真实的张雨绮。</p>
+                <div class="pic_adress">
+                    <img src="http://pics6.baidu.com/feed/a9d3fd1f4134970ad68227692bf9decfa6865db9.jpeg?token=90fd9988d269f3ebf0374e3a7f9b6ea2&s=7942CF1D431263CE426491F80300A032" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">而如今的张雨绮涅槃重生，虽然之前被很多人误会是一个强势的女人，引得很多人的讽刺，让人不免对他产生了一种难以接近、难以相处的性格，但是在近期她所参加的一些综艺节目中我们可以了解到，他并没有那样的嚣张跋扈，只能说是一种洒脱，她却是所有人里面最容易相处的一个人，与外界所说的形象完全不符。
+                </p>
+                <div class="pic_adress">
+                    <img src="http://pics7.baidu.com/feed/6c224f4a20a446232fa5da1e24117d090cf3d71d.jpeg?token=f37b062e7dcab3574b82ac78d7fea55e" alt="">
+                    <span class="name">张雨绮</span>
+                </div>
+                <p class="p">张雨绮就是这样的真实，拥有自己的风格，直爽干脆，毫不拖泥带水的性格，不在意别人的看法，活出真实的自己。最后也希望张雨绮能够给我们带来更好的作品，希望她开心快乐每一天。</p>
+                <p class="p">今天就分享到这里了，我们明天再见吧，如果各位小伙伴喜欢我的话，可以点个关注再走，我每天都会更新的哦！</p>
+                <p class="p">声明：内容文字原创，未经授权不得转载，部分图片来源于网络，如有侵权请联系告知删除，谢谢！</p>
+            </div>
+            <button>举报反馈</button>
+        </div>
+        <div class="right">
+            <div>
+                <h2>相关文章</h2>
+                <ul>
+                    <li>
+                        <div class="recommend">
+                            <div>
+                                <a href="#">张雨绮的腿是上帝亲手设计？她穿上“墨汁靴”，腿长得让女生羡慕</a>
+                                <img src="http://t12.baidu.com/it/u=2648913041,1204779940&fm=173&app=49&f=JPEG?w=312&h=208&s=F7265D6EEEA82534D8644D390300C012" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recommend">
+                            <div>
+                                <a href="#">张雨绮真会穿，穿深蓝色蒙古袍豪迈大气，配黑色腰封显高又显瘦</a>
+                                <img src="http://t10.baidu.com/it/u=2002280124,1920383663&fm=173&app=49&f=JPEG?w=312&h=208&s=998A337F7071D39089DCA0F70300C063" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recommend">
+                            <div>
+                                <a href="#">易烊千玺飞无锡，紫色卫衣变瘦好多，差点摔倒好萌，锁骨被抓123123</a>
+                                <img src="http://t11.baidu.com/it/u=1038746731,2928810882&fm=173&app=49&f=JPEG?w=312&h=208&s=F0343ED4444343511195707E03003064" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recommend">
+                            <div>
+                                <a href="#">女人头发别瞎剪，今秋试试这3款“发型”就对了，时髦显脸小123123</a>
+                                <img src="http://t12.baidu.com/it/u=3896736284,1928145140&fm=173&app=49&f=JPEG?w=312&h=208&s=DD2635776CB0F584F13527C70300E0A1" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="recommend">
+                            <div>
+                                <a href="#">倪妮红妆配黑裙真美！排骨胸一字肩锁骨明显，平胸妹子也有123123</a>
+                                <img src="http://t12.baidu.com/it/u=200669060,698875657&fm=173&app=49&f=JPEG?w=312&h=208&s=1D05CD176522751140F9C1FA0300C033" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <div class="line"></div>
+</body>
+</html>

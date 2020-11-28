@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.css基础选择器和层叠样式</title>
+</head>
+<style>
+    /* 标签选择器,表示选中页面中左右的div标签,并且同时给他们添加样式 */
+    div{
+        font-size: 30px;
+    }
+    /* 类名选择器,表示选中所有类名叫d1的元素,并且同时给他们添加样式 */
+    .d1{
+        color:forestgreen;
+        width: 200px;
+        height: 200px;
+        background-color: deeppink;
+    }
+    /* id选择器 相当于身份证 唯一性,同一页面 同一id只能出现一次 */
+    /* #id,id选择器,表示选择页面中那个id的元素 */
+    #name{
+        color: forestgreen;
+        font-size: 50px;
+    }
+</style>
+<body>
+    <!-- 取类名和id名时,尽量使用英文单词,不能直接采用纯数字,尽量不要使用字母加数字,例如d1 a1等 -->
+    <!-- class类名,可以重复出现,可以拥有多个 -->
+    <div class="d1">大家</div>
+    <div id="name">下午好!</div>
+    <p class="d1">大家下午好</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.css选择器</title>
+</head>
+<style>
+    /* 
+    !important 10000 
+    style=""   1000
+    #id        100
+    class      10
+    span       1
+    *          0
+    类，属性，伪类选择器的优先级相同
+    选择器的优先级：将选择器权值相加，权值越大优先级越高
+    权值相同的选择器在下面的优先级高。
+    */
+    body{
+        font-size: 30px;
+    }
+    *{
+        color: red;
+    }
+    span{
+        color: deeppink;
+    }
+    .span{
+        color: firebrick;
+    }
+    #span{
+        color: aqua;
+    }
+</style>
+<body>
+    <main id="main">
+        <div class="div">
+            <span class="span" id="span">花好月圆</span>
+        </div>
+    </main>
+    <p>你好</p>
+</body>
+</html>

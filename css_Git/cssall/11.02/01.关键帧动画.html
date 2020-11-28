@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.关键帧动画</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .box{
+        width: 200px;
+        height: 200px;background-color: #ff6700;
+        position: relative;
+        top: 0;
+        left: 0;
+        /* animation设置动画样式 */
+
+        /* 参数依次为：动画名字，动画的单次执行时间，相邻两个帧之间的动画的速率，动画的延迟时间，动画的执行次数，动画的执行方向，动画结束时是否保留结束时的样式状态 */
+        /* infinite无限播放 动画执行一次就写1*/
+        /* alternate动画轮流反方向播放。normal为默认值 */
+        /* forwards 动画结束时保留结束样式 none 默认值不保留 */
+        /* 动画延迟时间可以为负表示为动画提前多长时间开始播放，-0.3s表示动画提前0.3s开始播放 */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        /* animation: move 2s liner 0.3s infinite normal both ; */
+        /* 设置动画样式，至少要显示动画的名字和时间 */
+        animation: move 2s infinite ease-in-out alternate-reverse ;
+    }
+    @keyframes move {
+        0%{
+            top: 0;
+            left: 0; 
+            background-color: aqua;
+        }
+        25%{
+            top: 0;
+            left: 400px;
+            background-color: pink;
+        }
+        50%{
+            top: 400px;
+            left: 400px;
+            background-color: blue;
+        }
+        75%{
+            top: 400px;
+            left: 0px;
+            background-color: gold;
+        }
+        100%{
+            top: 0;
+            left: 0;
+            background-color: green;
+        }
+    }
+    .box:hover{
+        /* 设置动画的状态 */
+        /* running 运动状态 paused 暂停 */
+        animation-play-state: paused;
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.内外边距</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        background-color:red;
+        
+        /* margin 和 padding 
+            一个值  上下左右
+            两个值  上下   左右
+            三个值  上     左右   下
+            四个值  上     右     下    左
+         */
+        padding: 20px 5px 15px;
+        /* (margin)padding-top: 10px;
+                    left,bottom,right
+         */
+         /*上下边距为零  左右auto   定宽剧中  */
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>

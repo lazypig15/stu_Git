@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收缩</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        font-size: 60px;
+        display: flex;
+    }
+    section{
+        border: 1px solid red;
+    }
+
+    /* flex-shrink:设置项目的收缩比例 ,默认值为1 作用 :如果空间不够,项目所占空间等比例缩小,如果设置为0  则不会收缩,值越大收缩越厉害,可以通过收缩窗口的大小来查看 ;
+ */
+    section:nth-child(1){
+        flex-basis: 100px;
+        flex-shrink:0 ;
+    }
+    section:nth-child(2){
+        flex-basis: 200px;
+        flex-shrink:1 ;
+
+    }
+    section:nth-child(3){
+        flex-basis: 300px;
+        flex-shrink:2 ;
+
+
+    }
+    section:nth-child(4){
+        flex-basis: 300px;
+        flex-shrink: 2;
+
+    }
+</style>
+<body>
+    <section>春</section>
+    <section>夏</section>
+    <section>秋</section>
+    <section>冬</section>
+</body>
+</html>

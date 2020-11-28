@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 60px;
+            border: 1px solid orange;
+        }
+        p{
+            /* overflow: hidden;
+            text-overflow: ellipsis; */
+            /* white-space: nowrap; */
+            overflow: hidden;
+            text-overflow: ellipsis;   
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略多行文本省略</p>
+    </div>
+
+    <!-- 
+        如何实现多行文本省略?
+         text-overflow: ellipsis;
+
+
+         css中哪些属性可以继承？
+         文本类属性：font-size color font-family font-weight
+         布局属性不可继承
+     -->
+    
+</body>
+</html>

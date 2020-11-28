@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素特性</title>
+    <style>
+        /* ,并集选择器  同时选择多个标签添加样式 选择器之间，隔开 */
+        header,main,footer,span,del,strong,img,button{
+            background-color: rgb(0, 68, 100);
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块元素：独占一行。
+                默认情况下，元素高度由内容撑开，宽度是父元素的宽度。
+                可以设置宽高。
+        行元素：不独占一行，
+                默认情况下，元素高度宽度都由内容撑开。
+                设置宽高无效。
+        行内块：不独占一行。
+                默认情况下，元素高度宽度都由内容撑开。
+                可以设置宽高。
+                多个行元素或行内块元素相邻时，回一个一个排列在一行，排满自动换行。                
+     -->               
+
+    <header>页头</header>
+    <main>主体</main>
+    <footer>页底</footer>
+    <span>普通文本</span>
+    <del>删除线文本</del>
+    <strong>加粗</strong>
+    <img src="./picture/aaaf800761480cedfb1b04c9c80e0150 (1).jpg" alt="">
+    <button>按钮</button>
+
+</body>
+</html>

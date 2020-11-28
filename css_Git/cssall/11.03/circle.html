@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .container{
+        perspective: 2000px;
+        width: 200px;
+        height: 100px;
+        transform-style: preserve-3d;
+        margin: 200px auto;
+        animation: rotate 5s linear infinite;
+    }
+    @keyframes rotate {
+        from{
+            transform: rotateY(0);
+        }
+        to{
+            transform: rotateY(360deg);
+        }
+    }
+    .circle{
+        position: relative;
+    }
+    .circle>p{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        /* opacity: .3; */
+        opacity: .5;
+        box-sizing: border-box;
+        background: radial-gradient(#ffffff,#858585,#0e0d0d);
+        
+    }
+    .c1{
+        position: absolute;
+        transform: rotateY(0deg);
+    }
+    .c2{
+        position: absolute;
+        transform: rotateY(45deg);
+    }
+    .c3{
+        position: absolute;
+        transform: rotateY(90deg);
+    }
+    .c4{
+        position: absolute;
+        transform: rotateY(135deg);
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="circle">
+            <p class="c1"></p>
+            <p class="c2"></p>
+            <p class="c3"></p>
+            <p class="c4"></p>
+        </div>
+    </div>
+</body>
+</html>

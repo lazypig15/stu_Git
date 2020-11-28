@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02.小米导航</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    .container{
+        width: 1226px;
+        margin: 0 auto;
+    }
+    nav{
+        background-color: #333;
+        height: 40px;
+        font-size: 12px;
+        color: #b0b0b0;
+    }
+    .nav_h{
+        height: 40px;
+        background-color: #333;
+    }
+    .box_left{
+        float: left;
+    }
+    .shopping_car{
+        float: right;
+        line-height: 40px;
+        width: 120px;
+        height: 40px;
+        margin-left: 15px;
+        text-align: center;
+        background-color: #424242;
+    }
+    .box_right{
+        float: right;
+    }
+    .box_left>a,.box_right>a{
+        color: #b0b0b0;
+        display: inline-block;
+        line-height: 40px;
+    }
+    .sep{
+        color: #424242;
+        font-size: 12px;
+        margin: 0 0.3em;
+        font-family: sans-serif;
+    }
+    .item{
+        padding: 0 5px;
+    }
+    .item2{
+        padding: 0 10px;
+    }
+    /* hover是鼠标悬停触发的伪类 */
+    .box_left>a:hover,
+    .box_right>a:hover{
+        color: #fff;
+    }
+
+
+    .sec_h{
+        height: 100px;
+        /* background-color: yellow; */
+    }
+    .logo{
+        width: 55px;
+        height: 55px;
+        margin:22px 7px 0 0;
+        background-color: #ff6700;
+        float: left;
+        background-image: url('./images/mi-logo.png');
+        background-position: center;
+    }
+    .sec_list{
+        width: 850px;
+        height: 100px;
+        /* background-color: green; */
+        float: left;
+        padding: 12px 0 0 30px;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    .shousuo{
+        width: 296px;
+        height: 50px;
+        margin-top: 25px;
+        /* background-color: aqua; */
+        float: right;
+        position: relative;
+    }
+    .sec_list>li{
+        float: left;
+    }
+    .kong{
+        width: 142px;
+        height: 88px;
+    }
+    .items>a{
+        color: #333;
+        font-size: 16px;
+        padding: 26px 10px 38px;
+        display: block;
+    }
+    input{
+        width: 245px;
+        height: 50px;
+        border: 1px solid #e0e0e0;
+        outline:0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 52px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        position: absolute;
+        outline:0;
+        top: 0;
+        right: 0;
+    }
+    .items>a:hover{
+        color: #ff6700;
+    }
+    /* focus当元素获取到焦点时更改样式 */
+    /* input:focus{
+        border-color: #ff6700;
+    }
+    input:focus + button{
+        border-color: #ff6700;
+    } */
+</style>
+<body>
+    <nav>
+        <!-- 定宽居中 -->
+        <div class="container nav_h">
+            <!-- 左侧 -->
+            <div class="box_left">
+                <a href="#">小米商城</a>
+                <span class="sep">|</span>
+                <a href="#">MIUI</a>
+                <span class="sep">|</span>
+                <a href="#">loT</a>
+                <span class="sep">|</span>
+                <a href="#">云服务</a>
+                <span class="sep">|</span>
+                <a href="#">金融</a>
+                <span class="sep">|</span>
+                <a href="#">有品</a>
+                <span class="sep">|</span>
+                <a href="#">小爱开放平台</a>
+                <span class="sep">|</span>
+                <a href="#">企业团购</a>
+                <span class="sep">|</span>
+                <a href="#">资质证照</a>
+                <span class="sep">|</span>
+                <a href="#">协议规则</a>
+                <span class="sep">|</span>
+                <a href="#">下载app</a>
+                <span class="sep">|</span>
+                <a href="#">智能生活</a>
+                <span class="sep">|</span>
+                <a href="#">Select Location</a>
+            </div>
+            <!-- 购物车 -->
+            <div class="shopping_car">购物车（0）</div>
+            <!-- 登陆 -->
+            <div class="box_right">
+                <a class="item" href="#">登陆</a>
+                <span class="sep">|</span>
+                <a class="item" href="#">注册</a>
+                <span class="sep">|</span>
+                <a class="item2" href="#">消息通知</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container sec_h">
+        <div class="logo"></div>
+        <ul class="sec_list">
+            <li class="kong"></li>
+            <li class="items"><a href="#">小米手机</a></li>
+            <li class="items"><a href="#">Redmi 红米</a></li>
+            <li class="items"><a href="#">电视</a></li>
+            <li class="items"><a href="#">笔记本</a></li>
+            <li class="items"><a href="#">家电</a></li>
+            <li class="items"><a href="#">路由器</a></li>
+            <li class="items"><a href="#">智能硬件</a></li>
+            <li class="items"><a href="#">服务</a></li>
+            <li class="items"><a href="#">社区</a></li>
+        </ul>
+        <div class="shousuo">
+            <input type="text" placeholder="出行">
+            <button></button>
+        </div>
+    </section>
+
+</body>
+</html>

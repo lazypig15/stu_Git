@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.弹性布局对齐方式</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        display: flex;
+        /* 设置项目在主轴方向上的对齐方式(假设主轴水平方向从左到右) */
+        /* flex-direction: column; */
+        /* 居中 */
+        /* justify-content: center; */
+        /* 对其主轴开始位置(左对齐) */
+        /* justify-content: flex-start; */
+        /* 对其开始位置(右对齐) */
+        /* justify-content: flex-end; */
+
+        /* 两端对齐项目之间间距等分,项目与容器之间没有间隔 */
+        /* justify-content: space-between; */
+        /* 分散对齐,项目之间间距相等并且项目与容器之间间隔是项目之间间隔的一半 */
+        /* justify-content: space-around; */
+        /* 分散对齐,项目之间间距相等并且项目与容器之间间隔是项目之间间隔的一样 */
+        /* justify-content: space-evenly; */
+
+        /* 设置项目在交叉轴轴方向上的对齐方式(假设主轴垂直方向从上到下) */
+        /* 居中 */
+        /* align-items: center; */
+        /* 对其交叉轴开始位置(顶部对齐) */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+
+        /* 默认值 如果项目未设置高度或者高度为auto时将占满整个容器的高 当固定高度不起作用时 */
+        /* align-items: stretch; */
+        /* 与项目第一行的第一个文字基线对齐  baseline基线:即英文四线三格的第三条线 */
+        /* align-items: baseline; */
+    }
+    section{
+        border: 1px solid red;
+    }
+    section:nth-child(1){
+        flex-basis: 100px;
+        height: 200px;
+        font-size: 40px;
+
+        /* 设置项目自身在交叉轴上的对其方式,会覆盖父标签中的align-items设置地值 */
+        /* align-self: center; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+        /* align-self: stretch; */
+        /* align-self: baseline; */
+        /* 默认父标签中的值 */
+        /* align-self: auto; */
+        
+    }
+    section:nth-child(2){
+        flex-basis: 100px;
+        height: 260px;
+        font-size: 50px;
+
+    }
+    section:nth-child(3){
+        flex-basis: 100px;
+        height:100px;
+        font-size: 60px;
+
+
+    }
+    section:nth-child(4){
+        flex-basis: 100px;
+        height: 220px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <section>春</section>
+    <section>夏</section>
+    <section>秋</section>
+    <section>冬</section>
+</body>
+</html>

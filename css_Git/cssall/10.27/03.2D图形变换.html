@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.2D图形变换</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    div{
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+    }
+    .d1{
+        background-color: aqua;
+        
+    }
+    .d1:active{
+        /* transform设置变形 */
+        /* translate()平移 ，有两个值分别对应x y轴*/
+        /* 正值x轴往右 y轴往下 */
+        /* 负值x轴往左 y轴往上*/
+        /* 只设置一个值时对应x轴 y轴不移动              */
+        transform: translate(-50px,0px);
+    }
+    .d2{
+        background-color: red;
+    }
+    .d2:active{
+        /* scale()缩放变形,两个值分别对应x y轴，值为缩放的倍数 */
+        transform:scale(2,2);
+        /* 设置基点 默认50% 50%*/
+        /* 只设置一个值时对应的xy轴都为这个值 */
+        transform-origin:20% 150%;
+    }
+    .d3{
+        background-color: orange;
+    }
+    .d3:active{
+        /* rotate()旋转 单位deg表示度数*/
+        /* 正值顺时针，负值逆时针 */
+        transform: rotate(-90deg);
+        transform-origin: 0% 100%;
+    }
+</style>
+<body>
+    <!-- 2D图形变换是指对在二维平面上的图形进行平移缩放旋转等一系列的变化 -->
+    <div class="d1">平移</div>
+    <div class="d2">缩放</div>
+    <div class="d3">旋转</div>
+</body>
+</html>

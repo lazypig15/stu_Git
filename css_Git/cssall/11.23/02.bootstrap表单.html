@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+    <style>
+        .form{
+            width: 500px;
+        }
+    </style>
+<body>
+    <form action="" class="form center-block">
+        <!-- 
+            form-group:表单组
+            form-control：表单控件
+            form-xxx：表示表单样式
+        --> 
+        <label for="" class="control-label col-sm-3">登录</label>
+        <div class="form-group col-sm-9">
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" placeholder="123">
+            <div class="input-group-addon">$</div>
+          </div>
+        </div>
+        <!-- checkbox -->
+        <div class="checkbox">
+            <label for="">
+                <input type="checkbox">选项一：。。。。
+            </label>
+            <label for="">
+                <input type="checkbox" disabled>选项二：。。。。
+            </label>
+        </div>
+        <br>
+        <div class="checkbox">
+            <label for="">
+                <input type="checkbox">选项一：。。。。
+            </label>
+        </div>
+        <div class="checkbox">
+            <label for="">
+                <input type="checkbox" disabled>选项二：。。。。
+            </label>
+        </div>
+        <!-- radio -->
+        <div class="radio">
+            <label for="name">
+                <input type="radio" name="name">选项一：。。。。
+            </label>
+            <label for="name">
+                <input type="radio" name="name">选项二：。。。。
+            </label>
+            <label for="name">
+                <input type="radio" name="name" disabled>选项三：。。。。
+            </label>
+        </div>
+        <br>
+        <div class="radio">
+            <label for="radio1">
+                <input type="radio" name="name" id="radio1">选项一：。。。。
+            </label>
+        </div>
+        <div class="radio">
+            <label for="radio2">
+                <input type="radio" name="name" id="radio2">选项二：。。。。
+            </label>
+        </div>
+        <div class="radio">
+            <label for="radio3">
+                <input type="radio" name="name" id="radio3" disabled>选项二：。。。。
+            </label>
+        </div>
+        <div class="btn btn-success form-control">提交</div>
+    </form>
+</body>
+
+</html>

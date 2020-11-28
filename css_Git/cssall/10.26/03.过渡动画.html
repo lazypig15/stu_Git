@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.过渡动画.html</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        background-color: aqua;
+    }
+    section{
+        width: 200px;
+        height: 0px;
+        border-radius: 50%;
+        background-color: magenta;
+        position: absolute;
+        top: 0;
+        left: 10px;
+
+        /* 过渡动画,将样式变化的过程展示出来,产生过渡效果 */
+        /* transition是令一个或者多个可以同数值表示的css属性值发生变化时产生的过渡效果 */
+
+        /* 设置过度属性
+            单独过渡某个属性        
+        */
+        /* transition-property: background-color; */
+        /* 同时过度多个属性 */
+        /* transition-property: left,background-color,width; */
+        /* all过度所有可以过度的属性 */
+        /* transition-property: all; */
+
+        /* 设置过度持续时间 s */
+        /* transition-duration: 2s; */
+
+        /* 设置过度开始延时多久开始执行 */
+        /* transition-delay: 2s; */
+
+        /* 缓动函数,指定动画效果在执行时的速度 
+            linear匀速
+            ease默认值,逐渐减速
+            ease-in加速
+            ease-out减速
+            ease-in-out先加速在减速
+        */
+        /* transition-timing-function: ease-in-out; */
+
+        /* 过渡动画的综合写法 */
+        /* 如果有两个时间前面的是动画时间 后面的是延迟时间 */
+        /* transition: left 2s linear 1s; */
+        /* 过渡动画最少要设置两个属性   过渡的属性和过度时间 */
+        transition: all 2s ;
+    }
+    body:hover section{
+        left: 600px;
+        height: 200px;
+    }
+
+</style>
+<body>
+    <section></section>
+</body>
+</html>

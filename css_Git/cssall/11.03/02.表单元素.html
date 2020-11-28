@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.表单元素</title>
+</head>
+<style>
+
+</style>
+<body>
+    <!-- form用于创建表单 -->
+    <!-- action 当提交表单时将表单数据发往何处，url -->
+    <form action="#">
+        <div class="account info">
+            <!-- lable 给input标签添加标注 -->
+            <!-- for 作用是让lable与input进行绑定，lable的for的值与input Id相同时，可以让绑定的输入框自动获取输入焦点-->
+            <label for="account">账号：</label>
+            <!-- input定义输入框，按钮等，type定义input的类型。text是文本输入框 -->
+            <!-- name定义input的名称 -->
+            <!-- placeholder文本输入框的提示语 -->
+            <!-- autofocus 自动获取焦点 -->
+            <!-- autocomplete="on" 是否启用自动完成功能，on开启 off关闭 默认on -->
+            <!-- required 输入框的字段是必须的 ，不能为空 -->
+            <!-- readonly 定义输入框只读 -->
+            <!-- disabled 禁用input标签 -->
+            <!-- value -->
+            <input type="text" id="account" name="account" placeholder="请输入账号" autofocus >
+        </div>
+        <div class="account info">
+            <label for="password">密码：</label>
+            <!-- password设置为密码输入框 ，内容为掩码 -->
+            <!-- minlength/maxlength 设置最小长度最大长度 -->
+            <input type="password" id="password" name="password" placeholder="请输入密码" minlength="6">
+        </div>
+        <div>
+            <!-- button 定义可点击的按钮 -->
+            <!-- value 按钮标题 -->
+            <input type="button" value="登&#x3000;录">
+            <!-- submit定义提交按钮会把表单数据发送到服务器 -->
+            <!-- <button type="submit">提&#x3000;交</button> -->
+            <input type="submit" value="提&#x3000;交">
+            <!-- reset定义重置按钮 会清楚表单中所有的数据 -->
+            <input type="reset" value="重置">
+        </div>
+        <div>
+            <!-- 定义选择文件上传，供文件上传 -->
+            <!-- accept规定文件上传的文件类型 -->
+            <!-- multiple 同时可以选择多个文件 -->
+            <input type="file" accept="text/*" multiple>
+            <input type="file" accept="image/*" multiple>
+        </div>
+        <div>
+            <!-- 定义图像形式的按钮， 必须把src属性和alt属性与<input type=“image”>结合使用 -->
+            <input type="image" src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="按钮" title="按钮">
+        </div>
+    </form>
+</body>
+</html>

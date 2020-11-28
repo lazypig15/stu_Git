@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.弹性布局-空间分配-放大</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        font-size: 60px;
+        display: flex;
+    }
+    section{
+        border: 1px solid red;
+    }
+
+    /* flex-grow:设置元素的放大比例,默认值为零,作用:将剩余空间按照比例分配给每一个元素 */
+    section:nth-child(1){
+        flex-basis: 100px;
+        flex-grow: 1;
+
+    }
+    section:nth-child(2){
+        flex-basis: 200px;
+        flex-grow: 2;
+
+    }
+    section:nth-child(3){
+        flex-basis: 300px;
+        flex-grow: 3;
+
+
+    }
+    section:nth-child(4){
+        flex-basis: 300px;
+        flex-grow: 4;
+
+    }
+</style>
+<body>
+    <section>春</section>
+    <section>夏</section>
+    <section>秋</section>
+    <section>冬</section>
+</body>
+</html>

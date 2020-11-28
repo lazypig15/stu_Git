@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.行元素，块元素，行内块元素</title>
+</head>
+<style>
+    body{
+       
+        height: 100px;
+        
+    }
+    .d1{
+        width: 100px;
+        background-color: #eeeeee;
+    } 
+    .d2{
+        background-color: red;
+        overflow: hidden;
+    }
+    .d3{
+        width: 100px;
+        background-color: rgb(40, 16, 150);
+        float: right;
+    }
+    .d4{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(154, 156, 18);
+        padding: 20px;
+        margin: 50px;
+        margin: 0 auto;
+    }
+    .father{
+        background-color: rgb(131, 163, 144);
+        text-align: center;
+    }
+
+    .s1{
+        background-color: rgb(51, 97, 165);
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    .s2{
+        background-color: rgb(25, 126, 50);
+    }
+
+    .s3{
+        background-color: red;
+        /* padding: 20px;
+        margin: 50px; */
+
+    }
+
+    .s4{
+        background-color: rgb(9, 136, 60);
+    }
+    .b1{
+        width: 150px;
+        height: 100px;
+       
+    }
+    .b2{
+        padding: 20px;
+    }
+
+</style> 
+<body>
+    <!-- 块元素 -->
+    <!-- 
+        块元素特点：
+            1.内容独占一行
+            2.可以设置宽高,如果不设置宽高，宽就取决于父元素的宽，高度由内容决定
+            3.可以设置内外边距
+            4.多个块元素之间从上至下排列
+     -->
+     <!-- 常见的块元素：div，p， ul,li,ol,header,section,nav,main,footer...-->
+    
+     <!-- div.d${第$个元素}*3 -->
+     <div class="d1">第1个块元素</div>
+     <div class="d2">
+         第2个块元素
+          <div class="d3">第3个块元素</div>
+     </div>
+    <!-- 块元素可以设置margin 0 auto；定宽居中，（先定宽在剧中） -->
+     <div class="d4">第4个块元素</div>
+
+
+     <!-- 行元素 -->
+     <!-- 
+         行元素特点：
+            1.内容不独占一行 在同一行显示
+            2.不能设置宽高，宽高取决于内容
+            3.内边距都有效果，外边距左右有效 上下无效
+            4.多个行元素从左到右排列，如果右边位置不够，自动换行显示
+      -->
+      <!-- 常见的行元素：span，a，del，strong... -->
+      <span class="s1">第1个行元素</span>
+      <span class="s2">第2个行元素</span>
+      <span class="s3">第3个行元素</span>
+       
+      <div class="father">
+          <span class="s4">第4个行元素</span>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <!-- 行内块元素 -->
+      <!-- 
+            行内块元素的特点：
+                1.不独占一行
+                2.可以设置宽高，不设置宽高 宽高取决于内容
+                3.可以设置内外边距
+                4.多个行元素从左到右排列，如果右边位置不够，自动换行显示
+
+       -->
+      <!-- 常见的行内块元素：img，input，button... -->
+      <button class="b1">第1个行内块元素</button>
+      <button class="b2">第2个</button>
+      <button class="b3">第3个行内块元素</button>
+      <br>
+      <br>
+      <br>
+      <br>
+ <!-- 行内块元素可以通过设置给父元素设置text-align：center；来达到在父元素水平居中 -->
+      <div class="father">
+           <button class="b4">第4个行内块元素</button>
+      </div>
+
+      <!-- 元素之间可以通过display相互转换：
+                1.display：block；转化为块元素
+                2.display：inline；转化为行元素
+                3.display：inline-block；转化为行内块元素
+    -->
+      
+</body>
+</html>

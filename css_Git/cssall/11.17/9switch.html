@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 基础样式 */
+    input[type="checkbox"].switch{
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        width: 2.8rem;
+        height: 1.52rem;
+        border: 1px solid #ccc;
+        background-color: #ccc;
+        border-radius: 0.7rem;
+    }
+    input[type="checkbox"].switch::after{
+        content: '';
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+    }
+    /* 当checkbox被选中时的样式 */
+    input[type="checkbox"].switch:checked{
+        background-color: green;
+        border: 1px solid green;
+        /* padding-left: 1.4rem ; */
+    }
+    input[type="checkbox"].switch:checked::after{
+        left: 50%;
+    }
+
+    /* 状态区分
+       通过类名方式实现严谨性，确认基础类名，不同状态类型实现状态
+     */
+     input[type="checkbox"]:checked.switch.switch-danger{
+         background-color: red;
+     }
+     input[type="checkbox"]:checked.switch.switch-info{
+         background-color: blue;
+     }
+</style>
+<body>
+    <!-- 
+        1.使用input[type=checkbox]
+        2.清空默认样式
+        3.画圆
+        4.点击移动
+     -->
+     <input type="checkbox" class="switch">
+     <input type="checkbox" class="switch switch-info">
+     <input type="checkbox" class="switch switch-danger">
+</body>
+</html>

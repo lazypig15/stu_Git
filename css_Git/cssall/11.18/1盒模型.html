@@ -1,0 +1,35 @@
+<!-- 
+    time:2020-11-18
+    author:liu
+    coontent:盒模型
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        padding: 50px;
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+<!-- 
+    什么是css盒模型：分类
+    盒子的构成由magin border padding content决定，分为边框盒子和内容盒子
+    谷歌默认内容盒子   ie默认边框盒子。
+    边框盒子：宽度和高度决定盒子自身大小，需要计算
+    内容盒子：标准盒子；宽度高度决定了内容的大小 盒子自身大小需要计算
+    用边框盒子， 因为布局是子元素相对于父元素的布局 边框盒子可以直接控制子元素的大小 更容易布局。也为了解决一些兼容性问题
+ -->

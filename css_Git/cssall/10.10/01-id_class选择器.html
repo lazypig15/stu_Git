@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id_class选择器</title>
+    <style>
+        /* 元素选择器 */
+        /* div{
+            color: aqua;
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+        } 
+        /* id选择器 可以为标有特定id的html元素指定的样式
+        以#来定义后面加id属性值。
+         */
+        #box{
+            font-size: larger;
+            background-color: purple;
+            width: 200px;
+        }
+        #box2{
+            font-size: smaller;
+            background-color: red;
+            width: 200px;
+        }
+        /* class选择器可以为标有特定class的html元素指定的样式
+        以“  . ”来定义后面加class属性值。        
+        */
+
+        /*  id:唯一标识符，每个标签都给可以添加id属性，设置唯一的标识符，不能重复
+            class：用于描述一组的元素样式，class的值可以在多个元素中使用，
+            且一个元素可以拥有多个class值 使用空格隔开
+         */
+         /* 命名规则
+                1.字母 数字 下划线 $ 组成
+                2.首字母为字母 下划线
+                3.驼峰式   headerLogo
+          */
+          /* 优先级：
+                a.选择器都有一个权重值，越大越优先。
+                b.权值相同时，后出现的样式表优先与先出现的样式表。
+                c.同时使用多个选择器时，如果css属性相同时显示优先级(权值)更高的。
+                  若不存在相同属性则均会显示。
+                d.属性中标有！important优先级最高。无条件先执行。
+                e.权值可以相加
+               内联样式（1000） > id(100) > class(10) > 元素选择器(1)。
+              
+           */
+        .container{
+            color: seashell;
+            border: 2px green solid;
+        }
+        .one{
+            border-radius: 40px;
+        }
+        section.container{
+            width: 300px;
+            height: 300px;
+            color: hotpink;
+            border: 2px solid indigo;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box" class="container one">123</div>
+    <div id="box2"class="container">123</div>
+    <section class="container">123</section>
+    <section>123</section>
+</body>
+</html>

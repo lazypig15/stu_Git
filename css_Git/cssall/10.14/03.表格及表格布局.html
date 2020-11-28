@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.表格及表格布局</title>
+</head>
+<style>
+    table{
+        border: 1px solid deeppink;
+        /* 设置边框重叠 */
+        border-collapse: collapse;
+    }
+    tr,th,td{
+         border: 1px solid deeppink;
+    }
+    th,td{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <table >
+        <!-- rowspan上下合并  colspan左右合并 -->
+        <caption>123</caption>
+        
+            <tr>
+                <!-- th字体加粗居中 -->
+                <td rowspan="2">表格01</td>
+                <td>表格02</td>
+                <td>表格03</td>
+            </tr>
+
+            <tr>
+                
+                <td colspan="2">123</td>
+                
+            </tr>
+      
+    </table>
+</body>
+</html>

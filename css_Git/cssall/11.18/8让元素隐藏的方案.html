@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;background-color: blue;
+        margin: 10px;
+    }
+    .one{
+        display: none;
+        /* opacity: 0; */
+    }
+    .two{
+        /*  */
+        visibility: hidden;
+    }
+    .three{
+        opacity: 0;
+    }
+    .four{
+        height: 0;
+        overflow: hidden;
+    }
+    .five{
+        transform: scale(0,0);
+    }
+    .six{
+        transform: rotateX(90deg);
+    }
+    .seven{
+        /* 谷歌保留位置，ie没有位置 */
+        visibility: collapse;
+    }
+</style>
+<body>
+    <div class="one box">one</div>
+    <div class="two box">two</div>
+    <div class="three box">three</div>
+    <div class="four box">four</div>
+    <div class="five box">five</div>
+    <div class="six box">six</div>
+    <div class="seven box">seven</div>
+    <div class="box"></div>
+
+    <!-- 
+        display:none 与 visibility：hidden 区别是什么？
+
+        visibility属性的collapse属性值，在不同浏览器下的区别？
+
+        外边距一般用来拉开相邻兄弟元素的距离
+        内边距一般用来拉开父子元素之间的距离
+        注意：外边距塌陷问题
+     -->
+</body>
+</html>

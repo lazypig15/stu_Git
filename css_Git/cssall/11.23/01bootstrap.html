@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+</head>
+<style>
+    /* 实现自定义样式，修改ui库原有样式或者增加新样式 */
+    .xieke {
+        border-radius: 50px;
+    }
+
+    /* 如何修改ui库原有的样式：css 权重修改 */
+    /* button.liumeng{
+        color: red;
+    } */
+    .size {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <!-- 
+        ui库提前封装好的样式库以及api
+        如何使用、修改、 自定义
+
+        下载 安装 使用
+        1.命名的方式是什么 
+        2.api的作用是什么  函数的名字叫什么 ？
+     -->
+    <button class="btn btn-danger btn-sm xieke">成功的样式</button>
+    <button class="btn btn-info btn-lg liumeng">成功的样式</button>
+    <button class="btn btn-primary btn-xs">成功的样式</button>
+    <button class="btn btn-success">成功的样式</button>
+    <button class="btn btn-warning ">警告</button>
+    <a href="" class="btn btn-success active btn-lg disabled">link</a>
+    <a href="" class="btn btn-warning btn-sm" disabled="disabled">link</a>
+    <br>
+    <!-- <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606106231899&di=844d98303a0f985d7a8c4ba837a7bdd5&imgtype=0&src=http%3A%2F%2Fimg.aiimg.com%2Fuploads%2Fuserup%2F0909%2F2Z64022L38.jpg" alt="..." class="img-responsive  img-circle">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606106231899&di=844d98303a0f985d7a8c4ba837a7bdd5&imgtype=0&src=http%3A%2F%2Fimg.aiimg.com%2Fuploads%2Fuserup%2F0909%2F2Z64022L38.jpg" alt="" class="img-responsive img-thumbnail">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606106231899&di=844d98303a0f985d7a8c4ba837a7bdd5&imgtype=0&src=http%3A%2F%2Fimg.aiimg.com%2Fuploads%2Fuserup%2F0909%2F2Z64022L38.jpg" alt="" class="img-responsive img-rounded"> -->
+
+    <!-- text-xxx 实现颜色 -->
+    <p class="text-success text-center bg-warning">中国你好</p>
+    <!-- 
+        请找出以上四个按钮的相同点和不同点？
+        1: 有基础类名，基础类名一般用来清除默认样式。
+        2：通过btn-xxx区分状态 或者大小 等效果。
+     -->
+    <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+    <span class="caret"></span>
+    <br>
+    <div class="clearfix">
+        <div class="pull-left size bg-warning center-block "></div>
+        <div class="pull-right size bg-success center-block "></div>
+        <div class="size center-block" style="background-color: red;"></div>
+    </div>
+    <div class="size center-block" style="background-color:blue;"></div>
+</html>

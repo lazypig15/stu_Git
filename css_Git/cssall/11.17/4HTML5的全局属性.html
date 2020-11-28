@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <a id="github" class="link" title="访问我的地址" accesskey="z" tabindex="2" href="https://github.com/yq979292" target="_blank"
+        style="text-shadow: 1px 1px 1px #000">github</a> -->
+    <!-- 全局属性： 所有标签都可以使用的属性 -->
+    <!-- id class title accesskey(激活快捷键) tabindex() style lang-->
+    <h1 title="我是titlle 鼠标悬停可以看见">title属性</h1>
+    <div title="123">你好</div>
+    <!-- 设置激活元素的快捷键为alt+k -->
+    <a href="https://www.baidu.com/" target="_blank" accesskey="k"></a>
+    <h2 contenteditable="">可编辑的标题</h2>
+    <h2 hidden="">可编辑的标题</h2>
+
+
+    <!-- data-*自定义属性并赋值 多个相同的标签：每个属性唯一性；data-id -->
+    <div class="spaceship" data-ship-id="92432" data-weapons="laser 2" data-shields="50%" data-x="30" data-y="10" data-z="90">
+        <button class="fire" onclick="alert('第'+this.parentNode.dataset.shipId+'号飞船开始发射!')">Fire</button>
+    </div>
+    <kbd translate="no">this is a test</kbd>
+    <p translate="no">this is a test</p>
+    <kbd>this is a test</kbd>
+    <samp translate="no">Yum yum! That was some good honey!</samp>
+    <!-- <p>The Bee Game is a text adventure game in English. </p>
+    <p>When the game launches, the first thing you should do
+        is type <kbd translate="no">eat honey</kbd>.</p> -->
+        <p>The game will respond with:<samp translate="no">Yum yum! That was some good honey!</samp></p>
+
+
+</body>
+
+</html>

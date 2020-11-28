@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            /* 
+            none：去掉默认圆点
+            square:实心方块
+            disc：实心圆
+            circle：圈
+            decimal：数字
+            upper-roman：大写罗马数字
+            lower-roman：小写罗马数字
+            upper-alpha：大写字母
+            lower-alpha：小写字母
+
+            
+             */
+            list-style: none;
+            display: inline-block;
+            /* margin: 15px; */
+            padding: 15px;
+            font-size: 14px;
+        }
+        a{
+            /* text-decoration: underline; 下划线
+                                line-through；贯穿线
+                                */
+            color: black;
+            text-decoration: none;
+        }   
+        i{
+            font-style: normal;/*   italic ：斜体*/
+            /* font-weight: bold;
+                            bold:700 
+                            bolder:900
+                            默认文本：400
+             */
+        }  
+         
+        img{
+            width: 250px;
+            height: 125px;
+        }
+        p{
+            width: 200px;
+            border: 1px solid red;
+            overflow: hidden;/*内容溢出隐藏*/
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul有默认的margin和padding -->
+    <ul>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">hao123</a></li>
+        <li><a href="#">地图</a></li>
+        <li><a href="#">视频</a></li>
+        <li><a href="#">贴吧</a></li>
+        <li><a href="#">学术</a></li>
+        <li><a href="#">更多</a></li>
+    </ul>
+    <div><img src="https://www.baidu.com/img/PCdoodle_dce011f4f164006d915e4e122012c428.png" alt=""></div>
+    <form action="">
+        <input type="text" placeholder="">
+        <input type="button" value="百度一下">
+        <p>当文本溢出元素时，可以把溢出的设置为省略号</p>
+    </form>
+</body>
+</html>

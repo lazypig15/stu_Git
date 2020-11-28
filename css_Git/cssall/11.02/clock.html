@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+<body>
+    <style>
+        .bg{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-image: url('./images/clock.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .shi{
+            width: 6px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            top: 120px;
+            right: 197px;
+            animation: shizhen 43200s infinite linear;
+        }
+        .fen{
+            width: 4px;
+            height: 130px;
+            background-color: red;
+            position: absolute;
+            top: 86px;
+            right: 198px;
+            animation: fenzhen 3600s infinite linear;
+        }
+        .miao{
+            width: 2px;
+            height: 160px;
+            background-color: aqua;
+            position: absolute;
+            right: 199px;
+            top: 62px;
+            animation: miaozhen 60s infinite steps(60);
+        }
+        @keyframes miaozhen {
+            from{
+                transform: rotate(0deg);
+                transform-origin: 50% 87%;
+            }
+            to{
+                transform: rotate(360deg);
+                transform-origin: 50% 87%;
+            }
+        }
+        @keyframes fenzhen {
+            from{
+                transform: rotate(0deg);
+                transform-origin: 50% 88%;
+            }
+            to{
+                transform: rotate(360deg);
+                transform-origin: 50% 88%;
+            }
+        }
+        @keyframes shizhen {
+            from{
+                transform: rotate(0deg);
+                transform-origin: 50% 100%;
+            }
+            to{
+                transform: rotate(360deg);
+                transform-origin: 50% 100%;
+            }
+        }
+        .bg:hover .shi,.bg:hover .fen,.bg:hover .miao{
+            animation-play-state: paused;
+    }
+    </style>
+</body>
+    <div class="bg">
+        <div class="shi"></div>
+        <div class="fen"></div>
+        <div class="miao"></div>
+    </div>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<style>
+    em::before{
+        content: '\e665';
+        font-style: normal;
+    }
+
+.d1{
+    height: 0;
+}
+.d2:focus+.d1{
+    height: 200px;
+}
+</style>
+<body>
+    <span class="iconfont">&#xe665;&#xe7eb;<em></em></span>
+    <span class="iconfont">&#xe789;</span>
+
+
+    <input class="d2" style="width: 200px;height: 200px;background-color: aqua;">  
+    
+    <div class="d1" style="width: 200px;background-color: aqua;">
+    </div>
+</body>
+</html>

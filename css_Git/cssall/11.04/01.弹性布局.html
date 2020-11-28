@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.弹性布局-基础</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        font-size: 60px;
+        
+        /* 开启弹性布局,设置display: flex;之后会使其子元素其他垂直对齐方式失效 */
+        display: flex;
+
+        /*
+        1.在弹性布局中,我们把开启弹性布局的元素称为"容器" 把弹性布局中所有的子元素称为"项目"
+        2.弹性布局的容器有两根轴,主轴和交叉轴,主轴的默认方向是水平方向从左放到右,交叉轴与主轴垂直,默认方向垂直方向从上往下
+        3.弹性布局中项目的大小,默认情况下(不设置宽高)占据主轴方向的大小为内容的大小,占据交叉轴方向的尺寸尽量铺满整个容器
+        */
+
+        /* 改变主轴方向 */
+        /* row默认值,水平从左到右 */
+        /* flex-direction: row; */
+        /* 与默认值相反 水平从右到左 */
+        /* 主轴垂直方向 ,从上到下*/
+        /* flex-direction: column; */
+        /* 主轴垂直方向 ,从下到上 */
+        /* flex-direction: column-reverse; */
+    }
+    section{
+        border: 1px solid red;
+        /* width: 100px;
+        height: 200px; */
+        /* 设置项目的伸缩基准(占据主轴方向多大空间) */
+        flex-basis: 25%;
+    }
+
+    /* order,默认值为零,可以负数,作用:改变弹性布局中项目的位置,数值越小月在前面 */
+    section:nth-child(1){
+        order: 1;
+    }
+    section:nth-child(2){
+        order: 4;
+    }
+    section:nth-child(3){
+        order: 2;
+    }
+    section:nth-child(4){
+        order:3;
+    }
+</style>
+<body>
+    <section>春</section>
+    <section>夏</section>
+    <section>秋</section>
+    <section>冬</section>
+</body>
+</html>

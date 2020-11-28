@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.弹性布局-换行对其</title>
+</head>
+<style>
+     html,body{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        font-size: 60px;
+        display: flex;
+        flex-wrap:wrap;
+        height: 284px;
+        /* align-content:换行之后在交叉轴上的对齐方式 */
+        /* 只针对在交叉轴上的多行项目,如果项目只有一行则不起作用 */
+        /* 对其开始位置 */
+        /* align-content: flex-start; */
+        /* 对其结束位置 */
+        /* align-content: flex-end; */
+        /* 在交叉轴上剧中 */
+        /* align-content: center; */
+
+        /* 在交叉轴上分散对齐,项目之间间距相等并且项目与容器之间间隔是项目之间间隔的一半 */
+        /* align-content: space-around; */
+        /* 在交叉轴上分散对齐,项目之间间距相等并且项目与容器之间间隔是0 */
+        align-content: space-between;
+        /* align-content: space-between; */
+        /* 默认值，当不设置项目高度时(交叉轴纵向)，项目在交叉轴上会尽可能铺满整个容器 */
+        /* align-content: stretch; */
+    }
+    section{
+        border: 1px solid red;
+        width: 150px;
+        height: 100px;
+        /* flex-shrink: 0; */
+    }
+</style>
+<body>
+    <section>01</section>
+    <section>02</section>
+    <section>03</section>
+    <section>04</section>
+    <section>05</section>
+    <section>06</section>
+    <section>07</section>
+    <section>08</section>
+    <section>09</section>
+    <section>10</section>
+    <section>11</section>
+    <section>12</section>
+    <section>13</section>
+    <section>14</section>
+    <section>15</section>
+    <section>16</section>
+    <section>17</section>
+    <section>18</section>
+    <section>19</section>
+    <section>20</section>
+</body>
+</html>

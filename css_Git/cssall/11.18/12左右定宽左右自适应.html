@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+  }
+  
+  .content{
+    width: 100%;
+    height:500px; 
+    margin: 0 auto;
+    display: flex;
+  }
+  .left{
+    background: blue;
+    width: 100px;
+    height: 100%;			
+  }
+  .right{
+    background: green;
+    width: 100px;
+    height: 100%;
+  }
+  .center{
+    background: pink;
+    height: 100%;
+    flex: 1;
+  }
+			
+</style>
+<body>
+  <div class="content">
+    <div class="left"></div>
+      <div class="center">
+        <h1>测试测试测试测试测试</h1>
+					<p>测试测试</p>
+					<p>测试测试</p>
+					<p>测试测试</p>
+					<p>测试测试</p>
+					<p>测试测试</p>
+          <p>测试测试</p>
+      </div>   
+      <div class="right"></div>
+  </div>
+        <!-- 
+            请实现中间自适应宽度，左右两拦固定宽度布局
+            1.左右两边元素定宽
+            2.给父元素设置弹性盒子
+            3.中间子项目设置flow-grow:1；
+
+            上下定高 中间自适应需要将弹性布局主轴方向修改。
+         -->
+</body>
+</html>
+
+

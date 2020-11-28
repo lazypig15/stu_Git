@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07.盒子模型</title>
+</head>
+<style>
+    .d1{
+        width: 200px;
+        height: 200px;background-color: tomato;
+        padding: 50px;
+        /* box-sizing: content-box; 内容盒子 默认 */
+       
+       
+        
+    }
+    .d2{
+        width: 200px;
+        height: 200px;background-color: rgb(34, 28, 95);
+         /* 边框盒子 */
+         box-sizing: border-box;
+         padding: 50px;
+        
+    }
+</style>
+
+<body>
+    <!-- 盒子模型由内到外由四部分组成分别是：content padding border margin -->
+
+    <!-- 标准模型，即内容盒子，即width=content（给元素设置的宽高为内容区的宽高，所i给元素设置padding或者border会使盒子变大）标准模型是元素默认的盒子模型-->
+    <div class="d1">标准模型</div>
+
+    <!-- IE模型 边框盒子 即给元素设置的宽高为content+padding+border -->
+    <div class="d2">IE模型</div>
+    
+</body>
+</html>

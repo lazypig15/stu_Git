@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01.练习讲解</title>
+</head>
+<style>
+    /* 初始化页面 */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+    font-family: arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        /* 去除a标签的下划线 */
+        text-decoration: none;
+    }
+    .container{
+        width: 984px;
+        margin: 0 auto;
+    }
+
+    /* 导航栏 */
+    nav{
+        height: 40px;
+        background-color: #01204f;
+    }
+    .container>li{
+        float: left;
+    }
+    .nav_h{
+        height: 40px;
+    }
+    .container>li>a{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 10px;
+    }
+    .item{
+        background-color: red;
+    }
+    .container>.item>a{
+         margin-left: 30px;
+         padding-left: 0;
+    }
+
+</style>
+<body>
+    <!-- 导航栏 -->
+    <!-- nav标签用于存放导航栏，块元素 -->
+    <nav>
+        <ul class="container nav_h">
+            <li class="item"><a href="#">首页</a></li>
+            <li><a href="#">国内</a></li>
+            <li><a href="#">国际</a></li>
+            <li><a href="#">军事</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">互联网</a></li>
+            <li><a href="#">科技</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">女人</a></li>
+            <li><a href="#">汽车</a></li>
+            <li><a href="#">房产</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

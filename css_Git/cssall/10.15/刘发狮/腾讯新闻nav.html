@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯新闻</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .container{
+        height: 80px;
+        border-bottom: 1px solid #ebebeb;
+        /* background-color: aqua; */
+    }
+    .logo{
+        display: block;
+        width: 167px;
+        height: 78px;
+        float: left;
+        /* background-color: brown; */
+        box-sizing: border-box;
+        padding: 25px 15px 20px 30px;
+    }
+    .login{
+        width: 84px;
+        height: 36px;
+        /* background-color:green; */
+        margin: 25px 30px 0 0;
+        box-sizing: border-box;
+
+        float: right;
+    }
+    /* .login>div{
+        width: 84px;
+        height: 36px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        float: right;
+    } */
+    .login>div{
+        width: 74px;
+        height: 36px;
+        float: right;
+        box-sizing: border-box;
+        padding: 0 10px 0;
+        text-align: center;
+    }
+    .list{
+        width: 805px;
+        height: 78px;
+        /* background-color: chartreuse; */
+        float: left;
+    }
+    .more{
+        width: 96.39px;
+        height: 80.8px;
+        float: left;
+        /* background-color: crimson; */
+        box-sizing: border-box;
+        padding: 26px 15px 24px;
+    }
+    img{
+        width: 122px;
+        height: 33px;
+    }
+    .item{
+        height: 78px;
+        float: left;
+        padding: 0 15px;
+        color: #000000;
+    }
+    .item>a{
+        display: inline-block;
+        height: 78px;
+        box-sizing: border-box;
+        padding: 26px 0 19px;
+        color: #333;
+        font-size: 18px;
+        /* background-color:darkblue; */
+    }
+    .item>a:hover{
+        color:#3563d5;
+    }
+    .focus>a{
+        border-bottom: 3px solid #4889f3;
+        font-weight: 700;
+    }
+    .more>span{
+        background: #e3f3fe;
+        height: 30px;
+        width: 66.39px;
+        padding: 0 14px;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .more>span>em{
+        font-style: normal;
+        line-height: 30px;
+        height: 30px;
+        font-size: 14px;
+        color: #3563d5;
+    }
+    .login_em{
+        font-style: normal;
+        font-size: 12px;
+        display: block;
+        width: 74px;
+        height: 26px;
+        box-sizing: border-box;
+        padding: 0 10px ;
+        line-height: 26px;
+        text-align: center;
+        background: #e3f3fe;
+        border-radius: 12px;
+        color: #3563d5;
+        position: absolute;
+
+    }
+</style>
+<body>
+    <nav class="container"> 
+            <a href="#" class="logo">
+                <img src="./images/new_logo.png" alt="">
+            </a>
+            <ul class="list">
+                <li class="focus item"><a href="#">要闻</a></li>
+                <li class="item"><a href="#">抗肺炎</a></li>
+                <li class="item"><a href="#">北京</a></li>
+                <li class="item"><a href="#">娱乐</a></li>
+                <li class="item"><a href="#">体育</a></li>
+                <li class="item"><a href="#">军事</a></li>
+                <li class="item"><a href="#">国际</a></li>
+                <li class="item"><a href="#">NBA</a></li>
+                <li class="item"><a href="#">科技</a></li>
+                <li class="item"><a href="#">财经</a></li>
+                <li class="item"><a href="#">汽车</a></li>
+            </ul>
+            <div class="more">
+                <span>
+                    <em>更多+</em>
+                </span>
+            </div>
+            <div class="login"><div>
+                <em class="login_em">一键登录</em></div>
+            </div>
+    </nav>
+</body>
+</html>

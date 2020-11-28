@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.媒体查询.html</title>
+    <link rel="stylesheet" media="all" href="./madia.css">
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    div{
+        font-size: 20px;
+    }
+    /* ::after伪元素 在...之后 */
+    /* div::after{
+        content: '1';
+    }
+    div::before{
+        content: '1';
+    } */
+
+    /* 
+    媒体查询 
+    HTML文件中不能直接使用<>符号
+    min-相当于大于等于 >=
+    max-       小     <=
+    and 和（同时满足）
+    */
+
+    /* 操作符可以用来构建复杂的媒体查询 
+        and:所有条件都要满足成立，才能使用样式表
+        ，：逗号   有一个条件成立就可以使用样式表
+        not：否定条件，用来对媒体查询的条件进行取反
+    */
+    /* screen ：表示电脑，平板，智能手机显示屏 */ 
+    /* width和height的用法一致 */
+/*     
+    @media screen and (min-width: 1200px){
+        div::after{
+            content: '----页面尺寸大于等于500px';
+        }
+    }
+    @media screen and (max-width: 800px){
+       div{
+           background-color: aqua;
+       }
+    } */
+    /* [800 1200] */
+    /* @media screen and (min-width: 800px) and (max-width: 1200px){
+        div::after{
+            content: '页面大于等于800px 小于等于1200px';
+        }
+        div{
+            background-color: pink;
+        }
+    } */
+
+    /* orientation:用来判断设备是横屏还是竖屏 */
+    /* portrait 竖 landscape 横*/
+    /* @media screen and (orientation: portrait) {
+        div::after{
+            content: '页面大于等于800px 小于等于1200px';
+        }
+    }
+    @media screen and (orientation:landscape) {
+        div::after{
+            content: '页面大于等于800px ';
+        }
+    } */
+    /* @media not screen and (max-width: 600px) {
+        div::after{
+            content: '----页面尺寸不小于600 ';
+        }
+    } */
+</style>
+<body>
+    <div>花好月圆</div>
+</body>
+</html>

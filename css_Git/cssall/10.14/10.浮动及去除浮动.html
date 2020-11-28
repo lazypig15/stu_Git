@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.浮动及去除浮动</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        /* overflow: hidden; */
+        zoom: 1;
+        
+        /* height: 30px; */
+    }
+    /* 清理浮动方式一 */
+    /* 通过添加空标签来清理浮动,让父元素自动获取高度 */
+    /* 优点 :简单好记 */
+    /* 缺点:增加了多余的空标签  大量使用会使页面变得臃肿 */
+    /* 清理浮动方式2 */
+    /* 手动给父元素添加高度达到清理浮动的目的 */
+    /* 优点  简单直白 */
+    /* 缺点  父元素高度固定 ,如果浮动元素高度不统一 ,会影响下面的布局 */
+    /* 清理浮动方式三 */
+    /* 浏览器支持好 主要使用方式 */
+    ul::after{
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+   
+    div{
+        width: 200px;
+        height: 200px;
+        background-color:green;
+        border-radius: 50%;
+    }
+    .item{
+        width: 25%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color: sandybrown;
+        /* float 浮动 会脱离文档流  元素在同一行显示  空间不够换行 */
+        /* 浮动只有左右两个方向 */
+        float: left;
+        /* 用到浮动就要清理 */
+    }
+    
+    /* .clear{
+        clear: both;
+    } */
+</style>
+<body>
+    <ul>
+        <li class="item">html</li>
+        <li class="item">css</li>
+        <li class="item">nodejs</li>
+        <li class="item">javascript</li>
+        <li class="clear"></li>
+    </ul>
+    <div></div>
+</body>
+</html>

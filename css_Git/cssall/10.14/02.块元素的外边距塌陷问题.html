@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.块元素的上下外边距塌陷问题</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+    }
+    .d1{
+        background-color: rgb(185, 19, 19);
+        margin: 40px 0;
+    }
+    .d2{
+        background-color: blue;
+        margin: 80px 0;
+
+    }
+    .s1{
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+    }
+    .s2{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <!-- 块元素上下排列时,上下外间距会塌陷(重合),此时谁的值大取谁的值 -->
+    <!-- <div class="d1"></div>
+    <div class="d2"></div> -->
+
+    <!-- 为嵌套关系时,内部块元素设置顶部外边距,父元素也会跟着移动,解决办法如下:
+        1.给父元素设置padding-top:0.1px
+        2.给父元素设置顶部边框border-top:0.1px solid transparent    
+    -->
+    <div class="s1">
+        <div class="s2"></div>
+    </div>
+    
+</body>
+</html>

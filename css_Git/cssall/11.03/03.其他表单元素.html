@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.其他表单元素</title>
+</head>
+<style>
+    fieldset{
+        margin: 10px 0;
+        border-width: thin;
+    }
+</style>
+<body>
+    <form action="#">
+        <!-- fieldset 将表单内的元素进行分组，会产生一个边框 -->
+        <fieldset>
+            <!-- legend 元素为fieldset 元素定义一个标题(caption)-->
+            <legend>请选择</legend>
+            <div>
+                <!-- radio定义单选框 -->
+                <!-- check第一次加载默认选中单选框或复选框 -->
+                <input type="radio" id="boy"  name="gender" checked>
+                <label for="boy">男孩</label>
+                <input type="radio" id="girl"  name="gender">
+                <label for="girl">女孩</label>
+            </div>
+            <div>
+                <input type="checkbox" id="html5" name="skills"  checked>
+                <label for="html5">HTML5</label>
+                <input type="checkbox" id="css3" name="skills"  checked>
+                <label for="css3">CSS3</label>
+                <input type="checkbox" id="js" name="skills"  checked>
+                <label for="js">javascript</label>
+            </div>
+            <!-- select 定义单选或者多选菜单 -->
+            <select name="skill" id="skill" multiple>
+                <!-- optgroup 定义选项组 -->
+                <!-- lable属性 添加选项组的描述 -->
+                <optgroup label="技能">
+                    <!-- option 定义列表中的一个选项内容 -->
+                    <option value="1">html5</option>
+                    <option value="2">css3</option>
+                    <!-- selected 属性规定在页面加载时预先选定的选项内容 -->
+                    <option value="3" selected>javascript</option>
+                    <option value="4">php</option>
+                </optgroup>      
+            </select>
+            <div>
+                    <!-- textarea定义多行文本输入框，内容可容纳无限量的文本 -->
+                    <!-- name定义文本区域的名称 -->
+                    <!-- cols定义宽
+                         rows定义高
+                    -->
+                    <textarea name="html_text" id="html_text" cols="30" rows="10"></textarea>
+                    <!-- 实际上每行字符数（英文）通常等于cols+1,
+                         实际上行数通常等于rows+1.
+                    -->
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

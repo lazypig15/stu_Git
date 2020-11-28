@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1-100的质数
+        // var count = 0;
+        // var arrz = [];
+        // for (var i = 1; i <= 100; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         if (i % j == 0) {
+        //             count++;
+        //         }
+        //     }
+        //     if (count <= 2) {
+        //         arrz[arrz.length] = i;
+        //     }
+        //     count = 0;
+        // }
+
+        // console.log('质数有：' + arrz);
+        //100以内的奇数 偶数
+        // var arrj = [];
+        // var arro = [];
+        // for (var i = 0; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         arro[arro.length] = i;
+        //     } else {
+        //         arrj[arrj.length] = i;
+        //     }
+        // }
+        // console.log('奇数有：'+arrj);
+        // console.log('偶数有：'+arro);
+        // var str = prompt('请输入一个奇数或者偶数');
+        // if(str=='奇数'){
+        //     alert('奇数有：'+arrj);
+        // }else if(str=='偶数'){
+        //     alert('偶数有：'+arro);
+        // }else{
+        //     alert('请重新输入');
+        // }
+        //100以内整除3
+        // var arr = [];
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0) {
+        //         arr[arr.length] = i;
+        //     }
+        // }
+        // console.log('能把三整除的有' + arr);
+
+
+        //判断一个数是技术还是偶数
+        // var num = prompt('请输入一个数');
+        // for (var i=0; ;i++) {
+        //     if (parseInt(num) % 2 == 0) {
+        //         alert(num + '这个数为偶数');
+        //         break;
+        //     } else if (parseInt(num) % 2 == 1) {
+        //         alert(num + '这个数为奇数');
+        //         break;
+        //     } else {
+        //         if(i<2){
+        //             num = prompt('你输入的有误，请重新输入！');
+        //         }else{
+        //             num = prompt('？？？？让你数个数咋就那么难？');
+        //         }
+                
+
+        //     }
+        // }
+
+
+        //判断一个年份是闰年还是平年
+        // var year = parseInt(prompt('请输入年份 如 ：2018'));
+        // for(;;){
+        //     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        //     alert(year + '是闰年');
+        //     break;
+        // } else if (year % 4 != 0 && year*1==year) {
+        //     alert(year + '是平年');
+        //     break
+        // } else {
+        //     year = parseInt(prompt('输入格式不正确，请输入年份 如 ：2018'));
+        // }
+        // }
+
+
+        //判断年龄是否满18岁
+        // var year = parseInt(prompt('请输入出生年份 如 ：2018'));
+        // var date = new Date();
+        // var nowYear = date.getFullYear();
+        //     if (nowYear - year >= 18) {
+        //         var age = nowYear - year;
+        //         alert('你今年' + age + '岁了,已经成年');
+        //     } else if(nowYear - year < 18){
+        //         alert('你还未成年');
+        //     }else{
+        //         year = parseInt(prompt('输入格式不正确，请输入出生年份 如 ：2018'));
+        //     }
+
+        //石头剪刀布
+        // var num = parseInt(prompt('请输入一个整数'));
+        // if(num == 0){
+        //     alert('石头');
+        // }else if(num==1){
+        //     alert('剪刀');
+        // }else if(num==2){
+        //     alert('布');
+        // }else{
+        //     alert('错误');
+        // }
+
+        //输入a、b两个数如果b>a则将b给a为了a一直大于等于b
+        // var a = parseInt(prompt('请输入第一个数'));
+        // var b = parseInt(prompt('请输入第二个数'));
+        // if(b>=a){
+        //     a=b;
+        // }
+        // alert('a:'+a+'\n'+'b:'+b);
+
+        //从大到小排序a,b,c
+        // var arr = [] ;
+        // arr[arr.length]= parseInt(prompt('请输入第一个数a')); ;
+        // arr[arr.length]= parseInt(prompt('请输入第二个数b'));
+        // arr[arr.length]= parseInt(prompt('请输入第三个数c'));
+        // for(var i = 0 ; i<2;i++){
+        //     for(var j  =0 ;j<3-i;j++){
+        //         if(arr[j]>arr[j+1]){
+        //             arr[j] = arr[j] + arr[j + 1];
+        //             arr[j + 1] = arr[j] - arr[j + 1];
+        //             arr[j] = arr[j] - arr[j + 1];
+        //         }
+        //     }
+        // }
+        // alert('大小顺序为：'+arr)
+
+        //开发一款软件，根据公式(身高-108)*2=体重，可以有10斤左右的浮动。来观察测试者
+        // var height = prompt('请输入身高/cm');
+        // var weight = prompt('请输入体重/kg');
+        // res = (height-108)*2 ;
+        // if(res>=weight+10 ||res>=weight-10){
+        //     alert('健康');
+        // }else if(res<weight+10){
+        //     alert('太瘦了')
+        // }else if(res>weight-10){
+        //     alert('太胖了，该减肥了')
+        // }else{
+        //     alert('输入有误');
+        // }
+
+        //输入数字 显示星期几
+        // var num = parseInt(prompt('请输入1~7'));
+        // if (num > 7 || num*1!=num) {
+        //     num = parseInt(prompt('输入有误，请输入1~7'));
+        // }
+        // switch (num) {
+        //     case 1:
+        //         alert('今天是星期一');
+        //         break;
+        //     case 2:
+        //         alert('今天是星期二');
+        //         break;
+        //     case 3:
+        //         alert('今天是星期三');
+        //         break;
+        //     case 4:
+        //         alert('今天是星期四');
+        //         break;
+        //     case 5:
+        //         alert('今天是星期五');
+        //         break;
+        //     case 6:
+        //         alert('今天是星期六');
+        //         break;
+        //     case 7:
+        //         alert('今天是星期天');
+        //         break;
+        // }
+
+        //大家都知道，男大当婚，女大当嫁。那么女方家长要嫁女儿，当然要提出一定的条件:高:180cm以上;富:1000万以上; 帅:500以上;
+        //如果这三个条件同时满足，则:‘我一定要嫁给他’
+        //如果三个条件有为真的情况，则:‘嫁吧，比上不足，比下有余。
+        //'如果三个条件都不满足，则:‘不嫁! '
+        // var h = prompt('身高/cm');
+        // var m = prompt('有多少钱/万');
+        // var c = prompt('你有多帅 1-600;');
+        // if(h>180&&m>100&&c>500){
+        //     alert('我一定要嫁给他')
+        // }
+        // if(h>180&&m>100&&c>500){
+        //     alert('嫁给他，比上不足，比下有余')
+        // }else{
+        //     alert('滚')
+        // }
+
+        //东方航空从北京飞往马尔代夫的机票原价为40O0元，4到10月份为旺季，其他月份为淡季，旺季时候头等舱打9折，经济舱打7.5折;淡季头等舱打6折，经济舱打3折。从页面输入出行的月份和选择的舱型计算出机票价格
+        // var month = prompt('请输入月份 1-12');
+        // var sum = 0 ;
+        // if(month>12||month<1){
+        //     month = prompt('请重新输入月份 1-12');
+        // }
+        // if(month>=4&&month<=10){
+        //     var where = prompt('头等舱还是经济舱');
+        //     if(where=='头等舱'){
+        //         sum = 4000*9/10;
+        //         alert('您的票价为：'+sum+'元');
+        //     }else if(where=='经济舱'){
+        //         sum = 4000*75/100;
+        //         alert('您的票价为：'+sum+'元');
+        //     }else{
+        //         where= prompt('输入有误，请输入"头等舱"or"经济舱"');
+        //     }
+        // }else{
+        //     var where = prompt('头等舱还是经济舱');
+        //     if(where=='头等舱'){
+        //         sum = 4000*6/10;
+        //         alert('您的票价为：'+sum+'元');
+        //     }else if(where=='经济舱'){
+        //         sum = 4000*3/10;
+        //         alert('您的票价为：'+sum+'元');
+        //     }else{
+        //         where= prompt('输入有误，请输入"头等舱"or"经济舱"');
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

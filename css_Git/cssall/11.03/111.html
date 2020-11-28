@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04.3d图形变换</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .state{
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+        perspective: 2000px;
+    }
+    .d1{
+        transform-style: preserve-3d;
+        animation: rotate 10s linear infinite;
+    }
+    .container{
+        transform-style: preserve-3d;
+        position: relative;
+        transform: rotateX(55deg) rotateY(45deg);
+        width: 200px;
+        height: 200px;
+    }
+    @keyframes rotate {
+        from{
+            transform: rotateY(0);
+        }
+        to{
+            transform: rotateY(-360deg);
+        }
+    }
+    
+    .right{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .left{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .front{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transform: translateZ(100px);
+    }
+    .behind{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transform: rotateY(-180deg) translateZ(100px);
+    }
+    .top{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .bottom{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform: rotateX(-90deg) translateZ(100px) ;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        opacity: .9;
+    }
+</style>
+<body>
+    <ul>
+        <li class="state">
+            <div class="d1">
+                <div class="container">
+                <p class="top"><img src="./imgs/1.jpg" alt=""></p>
+                <p class="left"><img src="./imgs/2.jpg" alt=""></p>
+                <p class="front"><img src="./imgs/3.jpg" alt=""></p>
+                <p class="bottom"><img src="./imgs/4.jpg" alt=""></p>
+                <p class="right"><img src="./imgs/5.jpg" alt=""></p>
+                <p class="behind"><img src="./imgs/6.jpg" alt=""></p>
+            </div>
+            </div>
+            
+        </li>
+    </ul>
+        
+</body>
+</html>

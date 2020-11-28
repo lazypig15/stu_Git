@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link rel="stylesheet" href="col.css">
+</head>
+<style>
+    .box1,
+    .box2 {
+        height: 700px;
+        box-sizing: border-box;
+        border: 1px solid red;
+        /* margin: 10px; */
+    }
+
+    .box_right {
+        height: 200px;
+        border: solid 1px blue;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .box1 {
+            box-sizing: border-box;
+            height: 100px;
+            border: 1px solid red;
+            margin: 10px 0;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            height: 100%;
+            border: 1px solid red;
+            margin: 10px 0;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <div class="col-sm-2 col-xs-12 box1"></div>
+        <div class="col-sm-10  col-xs-12 box2">
+            <!--
+                 列偏移都是往右偏移
+                 col-md-offset-xx 通过margin-left实现的
+                 col-md-push-xx 是通过相对定位实现的
+             -->
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+        </div>
+    </main>
+</body>
+
+</html>

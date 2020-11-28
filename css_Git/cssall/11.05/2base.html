@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- base 设置整个html的根路径，控制a标签中 href 没有协议+域名 的链接跳转 -->
+    <base href="https://www.baidu.com/s" target="_blank">
+</head>
+<body>
+    <!-- base和a的href拼接 -->
+    <a href="?wd=谢科">搜索html5</a>
+    <a href="aa/bb">随便写的</a>
+    <!-- 相当于下面的写法 -->
+    <a href="https://baidu.com/s?wd=html5" target="_blank">百度一下</a>
+    <a href="https://baidu.com/s/aa/bb" target="_blank">百度一下</a>
+</body>
+</html>

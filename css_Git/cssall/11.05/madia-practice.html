@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madia-practice.html</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            background-color: red;
+            flex-wrap: wrap;
+        }
+        .container>div{
+            position: relative;
+        }
+        .container>div>img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 30px;
+        }
+        .position{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 250px;
+            opacity: .8;
+            display: none;
+        }
+        .container>div:hover .position{
+            display: block; 
+        }
+    }
+
+    @media screen and (max-width: 1199px) and (min-width: 800px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: pink;
+        }
+        .container>div{
+            position: relative;            
+        }
+        .container>div>img {
+            width: 300px;
+            height: 300px;
+            z-index: 99 ;
+            margin-bottom: 30px;
+        }
+        .position{
+            width: 300px;
+            height: 30px;
+            position: absolute;
+            top: 270px;
+            left: 0;
+            background-color:transparent;
+            color: transparent;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all 0.3s linear;
+        }
+        .container>div:hover .position{
+            transform: translate(0,30px); 
+            color: #000;
+            background-color: #fff;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: greenyellow;
+        }
+        .container>div{
+            position: relative;
+            width: 401px;
+            height: 401px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            
+        }
+        .container>div>img {
+            width: 401px;
+            height: 401px;
+        }
+        .position{
+            width: 401px;
+            height: 401px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color:  #000;
+            color:#fff;
+            text-align: center;
+            line-height: 401px;
+            transform: rotate(90deg);
+            transform-origin: 0% 100%;
+            /* display: none; */
+            opacity: 0;
+            transition: all 0.3s linear;
+        }
+        .container>div:hover .position{
+            transform: rotate(0deg); 
+            opacity: .8;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="position">龙的传人</div>
+            <img src="./images/1.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">西部牛仔</div>
+            <img src="./images/2.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">黎明使者</div>
+            <img src="./images/3.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">灵魂莲华</div>
+            <img src="./images/4.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">new legend</div>
+            <img src="./images/5.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">偶像歌手</div>
+            <img src="./images/6.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">阿卡丽</div>
+            <img src="./images/7.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">凯尔</div>
+            <img src="./images/8.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">KDA至臻</div>
+            <img src="./images/9.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">兽灵行者</div>
+            <img src="./images/10.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">原计划 火</div>
+            <img src="./images/11.jpg" alt="">
+        </div>
+        <div>
+            <div class="position">冠军之刃</div>
+            <img src="./images/12.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

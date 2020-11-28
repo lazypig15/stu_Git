@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css引用方式</title>
+    <!-- link标签引用外部文件
+        rel：relative，关系  设置当前文件与引用文件的关系
+        stylesheet：外部文件样式表。
+        href：文件资源地址。
+        相对路径：
+        ./ 同一文件夹
+        ../不同文件夹
+    -->
+    <link rel="stylesheet" type="" href="./test.css"/>
+    <style>
+        /*
+        CSS语法格式：
+        选择某个元素添加css样式
+        规则有两个主要的部分构成：选择器，以及一条或多条声明(css样式)
+        每一条声明有属性和属性值组成
+        属性是希望设置的样式，每个属性有一个值。用：分开 ；结束.用{}括起来
+
+        选择器{
+            属性：属性值；
+            ...
+            ...
+
+        }
+
+        */
+        .test02{
+            font-size: xx-large;
+            color: blue;
+        }
+       body{
+           background-color:darkgray;
+       }
+    </style>
+</head>
+<body  >
+    <!-- 
+        什么是css：
+            css指的是层叠样式表(cascading style sheets)设置网页的样式。
+            样式定义如何显示html元素。
+            样式通常存储在样式表中。
+            
+            添加样式的方法
+            1）内联样式；在开始标签中添加style属性，设置样式。
+            2）内嵌样式：在head标签中，title后添加style标签，设置样式。
+            3）外联样式：新建css文件，设置样式。在html中使用link标签引用 写在head标签中title标签后。
+
+            优先级：内联>内嵌>外联
+     -->
+     <p class="test" >123455</p>
+     <p style="font-size:larger; color: brown;">123455</p>
+     <p class="test02">123455</p>
+
+</body>
+</html>

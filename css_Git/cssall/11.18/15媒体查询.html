@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        font-size: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box {
+        width: 24%;
+        height: 300px;
+        background-color: #ff6700;
+        display: inline-block;
+    }
+
+    /* 
+        怎么写移动端的样式？
+
+        @media表是媒体查询
+        screen表示运行的设备条件
+        and 且
+        max-width 尺寸条件
+        =====>只有同时满足设备条件和尺寸条件时  才生效
+     */
+    @media screen and (max-width: 720px) {
+        .box{
+            width: 45%;
+            background-color: aqua;
+            margin-top: 10px;
+        }
+        main{
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    } 
+    @media screen and (max-width: 400px)  and (min-width: 320px){
+        .box:nth-child(2){
+            background-color: blue;
+        }
+    }
+</style>
+
+<body>
+    <!-- 
+        1.主要布局为pc端  兼容顶端 
+        条件是找PC端与移动端的临界条件
+
+        注意 :媒体查询中的基础样式是媒体查询外的样式
+            1.不论基本样式是什么 在媒体查询中一率重写所有样式 写所有的选择器
+            2.再进行代码优化处理;
+                删除相同选择器中相同样式
+    -->
+    <main>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </main>
+    <!-- 移动端为主： min-width -->
+</body>
+
+</html>
+<!-- 
+    媒体查询的使用：找条件
+        1.当前页面是的css样式是以什么端为主的
+        2.只有在html元素结构相同时，pc端与移动端布局不同时 ，在特殊尺寸下与有特殊样式，适合使用媒体查询
+        3.搭建自己的的栅格系统时候适合使用媒体查询
+ -->

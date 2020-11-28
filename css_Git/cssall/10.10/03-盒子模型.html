@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-盒子模型</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        body{
+            margin: 0%;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: cyan;
+            margin: 50px ;
+            border-width: 5px;
+            border-color: darkgoldenrod;
+            border-style: double;
+            border-left-style: solid;
+            border-left-width: 10px;
+            padding: 80px;
+            box-sizing: border-box;/*设置盒子不被撑大，内容区域会减小 */
+        }
+        /* 盒子模型包含了 margin  border padding content(由外到内)
+            margin:外边距    作用：设置当前元素与其他元素之间的间距。
+                    一个值  上下左右 
+                    两个值   上下   左右
+                    三个值   上  左右  下
+                    四个值   上  右  下  左
+            margin-left...
+            border:元素边框，设置四个包含三个值width color style
+            border-left:
+            ...
+
+            border-width: 
+            border-color: 
+            border-style: 
+            
+            border-left-style: 
+            border-left-width: 
+            border-left-color:
+            border-style:double 双线
+                         solid  实线
+                         dotted 点线
+                         dashed 虚线
+            padding:设置边框与内容之间的边距
+            同margin
+
+            给元素添加border padding时 会撑大盒子。在原有宽高上绘制
+        */
+        section{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section></section>
+    </div>
+    <p>参照元素，块元素独占一行，可以设置宽高</p>
+</body>
+</html>

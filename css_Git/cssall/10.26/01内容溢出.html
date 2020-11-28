@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容溢出</title>
+</head>
+<style>
+    div{
+        margin: 200px auto;
+        background-color: aqua;
+
+        /* 定义元素的最大宽度随着窗口的宽度变化而变化（注意把窗口宽度调小一些），但是最大宽度不会超过800px */
+        /* max-width: 800px; */
+
+        /* 定义元素的最小宽度随着窗口的宽度变化而变化（注意把窗口宽度调小一些），但是最小宽度不会小于800px，如果当前窗口宽度小于800px就会出现横向滚动条  */
+        /* min-width: 800px; */
+
+        /* min-width和min-width可以组合使用,表示标签总是占用尽可能少的横向空间,和尽可能少的纵向空间 */
+        width: 300px;
+        height: 100px;
+        /* hidden:隐藏溢出容器内容且不会出现滚动条 */
+        /* scroll:隐藏溢出容器内容,会出现滚动条 */
+        overflow: scroll;
+
+        /* 单个方向的滚动条 */
+        /* overflow-y: scroll; */
+        /* overflow-x: scroll; */
+
+        /* 允许用户手动调整标签大小 */
+        /* both:可以调节宽高 */
+        /* resize: both;
+            horizontal:可以调节宽度
+            vertical:可以调节高度
+            none:默认值不能调整宽高
+        */
+        resize: both;
+    }
+    /* section{
+        width: 400px;
+        height: 200px;
+        background-color: red;
+    } */
+    
+
+</style>
+<body>
+    <div>
+        <section>
+            10月25日晚，新疆维吾尔自治区人民政府新闻办公室召开喀什疫情新闻发布会，会上通报称，在10月24日，喀什地区疏附县报告来一例新冠病毒肺炎无症状感染者。该感染者一直在疏附县，无外地旅居史，感染者检测阳性前16天内无确诊病例、疑似病例和发热病人接触史。
+        </section>
+        
+    </div>
+</body>
+</html>

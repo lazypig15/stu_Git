@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01.选择器小结</title>
+</head>
+<style>
+    /* 1.标签选择器 */
+    h1{
+        color: aqua;
+    }
+    /* 2.多标签选择器，同时选中多个标签 */
+    h1,h2{
+        font-size: 20px;
+    }
+    /* 3.类名选择器 */
+    .content{
+        color: blue;
+    }
+    /* 4.id选择器 */
+    #box{
+        color: red;
+    }
+    /* 5.包含选择器 */
+    ul  span{
+        color: saddlebrown;
+    }
+    /* 6.子元素选择器 */
+    ul>span{
+        color: pink;
+    }
+    /* 7.子选择器 */
+    /* li:nth-child(2n+1   ){
+        color: orange;
+    } */
+
+    /* 8. 自定义属性选择器*/
+    p[title="pp"]{
+        color: deeppink;
+    }
+    /* ul+p{
+        color: orangered;
+    } */
+</style>
+<body>
+    <h1>选择器小结</h1>
+    <h2>选择器</h2>
+    <div class="content">袋类名的标签</div>
+    <div id="box">带有id的标签</div>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>jquary
+            <span>hehe</span>
+        </li>
+        <span>haha</span>
+    </ul>
+    <p title="pp">一段话</p>
+</body>
+</html>

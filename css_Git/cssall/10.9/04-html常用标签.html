@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-html常用标签</title>
+</head>
+<body>
+    <!-- 语义化结构标签 -->
+    <header>
+        定义网页的头部
+        <nav>navigator导航栏</nav>
+    </header>
+    <main>
+        网页的主体
+        <aside>侧边栏</aside>
+        <section>将...划分  划分区域</section>
+        <div>区域划分</div>
+
+    </main>
+    <footer>
+        网页的底部
+    </footer>
+    <!-- 标题标签 h${标题$}*6
+        一般一个网页只有一个和标签，其他需要写几个。
+        h1-h6字体逐渐变小 重要程度降低 字体都加粗，默认的文本样式。
+    -->  
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+    <!-- 
+        a标签
+        target: _blank
+        title:悬停提示文本。
+
+    -->
+    <a href="./03-css引用方式.html" target="_blank">click</a>
+    <a href="https://www.baidu.com/"><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" title="百度"alt="图片"></a><br/>
+
+    <!-- 按钮标签 -->
+    <button>123</button>
+    <!-- img 标签
+        src:图片地址
+        alt：图片加载失败的描述文本
+        title：鼠标悬停的提示文本
+        a标签嵌套img标签可实现点击图片跳转。
+    -->
+    <img src="">
+    <!-- <p>标签：段落标签，成段显示
+        <del>delete删除，带有删除线文本</del>
+        <span>普通文本</span>
+        <sub>下标</sub>
+        <sup>商标</sup>
+        <strong>语义化加粗文本</strng>
+        <i>斜体文本</i> 
+        <small>小号文本</small>
+        <big>大号文本</big>
+
+   
+    -->
+    <p>123455</p>
+    <del>12345</del>
+    <span>123</span>
+    <sub>123</sub>
+    <sup>123</sup>
+    <strong>123</strong>
+    <i>123</i>
+    <small>123</small>
+    <big>1   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br><hr>3</big>
+    <pre>
+        预格式标签：
+        保留所有
+        空格   换行 
+    </pre>
+    <em>文本</em><br>
+    <address>地址，江苏南京市雨花台区</address>
+    <!-- 列表展示 无序列表 ul /有序列表 ol /自定义列表 dl（define list）、dt（title）、dd（description）-->
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ol>
+    <dl>
+        <dt>榴莲</dt>
+        <dd>好吃</dd>
+        <dd>123</dd>
+        <dd>123</dd>
+    </dl>
+
+    <table border="1" width="500" bgcolor="pink" align="center"cellpadding="0"cellspacing="0">
+        <caption>信息</caption>
+        <thead>
+            <tr>
+                <th>学生1</th>
+                <th>学生2</th>
+                <th>学生3</th>
+                <tbody>
+                    <tr>
+                        <td>姓名1</td>
+                        <td>姓名2</td>
+                        <td>姓名3</td>
+                        <tfoot>
+                            <tr>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>132</td>
+                            </tr>
+                        </tfoot>
+                    </tr>
+                    <tr>
+                        <td>姓名1</td>
+                        <td>姓名2</td>
+                        <td>姓名3</td>
+                        <tfoot>
+                            <tr>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>132</td>
+                            </tr>
+                        </tfoot>
+                    </tr>
+                    <tr>
+                        <td>姓名1</td>
+                        <td>姓名2</td>
+                        <td>姓名3</td>
+                        <tfoot>
+                            <tr>
+                                <td>123</td>
+                                <td>133</td>
+                                <td>133</td>
+                            </tr>
+                        </tfoot>
+                    </tr>
+                </tbody>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

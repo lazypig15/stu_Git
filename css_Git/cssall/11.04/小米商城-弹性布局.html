@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城-弹性布局</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<style>
+    .to_different{
+        margin: 0;
+        height: 340px;
+        background-color: #fff;
+    }
+</style>
+
+<body>
+    <header></header>
+    <!-- 导航栏 -->
+    <nav>
+        <!-- 定宽居中 -->
+        <div class="container nav_h">
+            <!-- 左侧 -->
+            <div class="box_left">
+                <a href="#">小米商城</a>
+                <span class="sep">|</span>
+                <a href="#">MIUI</a>
+                <span class="sep">|</span>
+                <a href="#">loT</a>
+                <span class="sep">|</span>
+                <a href="#">云服务</a>
+                <span class="sep">|</span>
+                <a href="#">金融</a>
+                <span class="sep">|</span>
+                <a href="#">有品</a>
+                <span class="sep">|</span>
+                <a href="#">小爱开放平台</a>
+                <span class="sep">|</span>
+                <a href="#">企业团购</a>
+                <span class="sep">|</span>
+                <a href="#">资质证照</a>
+                <span class="sep">|</span>
+                <a href="#">协议规则</a>
+                <span class="sep">|</span>
+                <a href="#">下载app</a>
+                <span class="sep">|</span>
+                <a href="#">智能生活</a>
+                <span class="sep">|</span>
+                <a href="#">Select Location</a>
+            </div>
+            <div class="box_right">
+                <!-- 登陆 -->
+                <div class="box_login">
+                    <a class="item" href="#">登陆</a>
+                    <span class="sep">|</span>
+                    <a class="item" href="#">注册</a>
+                    <span class="sep">|</span>
+                    <a class="item2" href="#">消息通知</a>
+                </div>
+                <!-- 购物车 -->
+                <div class="shopping_car">购物车（0）</div>
+            </div>
+        </div>
+    </nav>
+    <!-- 第二栏 -->
+    <div class="container sec_h">
+        <div class="logo"></div>
+        <ul class="sec_list">
+            <li class="kong"></li>
+            <li class="items"><a href="#">小米手机</a></li>
+            <li class="items"><a href="#">Redmi 红米</a></li>
+            <li class="items"><a href="#">电视</a></li>
+            <li class="items"><a href="#">笔记本</a></li>
+            <li class="items"><a href="#">家电</a></li>
+            <li class="items"><a href="#">路由器</a></li>
+            <li class="items"><a href="#">智能硬件</a></li>
+            <li class="items"><a href="#">服务</a></li>
+            <li class="items"><a href="#">社区</a></li>
+        </ul>
+        <div class="shousuo">
+            <input type="text" placeholder="出行">
+            <button class="iconfont">&#xe8f0;</button>
+        </div>
+    </div>
+    <!-- 商品类别 -->
+    <div class="container bg_img">
+        <div class="commodity_category">
+            <ul>
+                <li class="category_item">
+                    <a href="#">手机 电话卡<em>&#xe7eb;</em></a>
+                    <div>
+                        <div class="set">
+                            <ul class="commodity_list">
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="commodity_list">
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="commodity_list">
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0803dc7125ffa3447b04b1ae60f57a2b.jpg?thumb=1&w=50&h=50&f=webp&q=90"
+                                            alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="commodity_list">
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img class="commodity_img" src="./images/小米10.webp" alt="">
+                                        <span class="commodity_name">小米10至尊纪念版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                </li>
+                <li class="category_item">
+                    <a href="#">电视 盒子<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">笔记本 显示器<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">家电 插线排<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">出行 穿戴<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">智能 路由器<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">电源 配件<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">健康 儿童<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">耳机 音箱<em>&#xe7eb;</em></a>
+                </li>
+                <li class="category_item">
+                    <a href="#">生活 箱包<em>&#xe7eb;</em></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 商品类别第二栏 -->
+    <div class="container recommend">
+        <div style="display: flex;">
+            <!-- 六小块 -->
+            <div>
+                <ul class="quick_shop">
+                    <li class="quick_item">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
+                                alt="">
+                            小米秒杀
+                        </a>
+                    </li>
+                    <li class="quick_item">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
+                                alt="">
+                            企业团购
+                        </a>
+                    </li>
+                    <li class="quick_item">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
+                                alt="">
+                            F码通道
+                        </a>
+                    </li>
+                    <li class="quick_item underline">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
+                                alt="">米粉卡
+                        </a>
+                    </li>
+                    <li class="quick_item underline">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
+                                alt="">以旧换新
+                        </a>
+                    </li>
+                    <li class="quick_item underline">
+                        <a href="#">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
+                                alt="">话费充值
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 三张图 -->
+            <div class="recommend_commodity_bar">
+                <ul class="recommend_commodity">
+                    <li><a href="#"><img class="commodity_pic" src="./images/redmi k30.png" alt=""></a></li>
+                    <li><a href="#"><img class="commodity_pic" src="./images/redmi 10x.png" alt=""></a></li>
+                    <li style="margin-right: 0;"><a href="#"><img class="commodity_pic" src="./images/mi-watch.png"alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f5f5f5;">
+        <div class="container">
+            <!-- 小米闪购 -->
+            <div class="category-position">
+                <h2 style="position: relative;">小米闪购
+                    <div class="quickshop-right">
+                        <span class="iconfont" style="border-right: 0;">&#xe7ec;</span><span
+                            class="iconfont">&#xe7eb;</span>
+                    </div>
+                </h2>
+                <div class="wait">
+                    <div class="wait-left">
+                        <div class="round">10:00场</div>
+                        <img src="./images/闪电.png" alt="">
+                        <div class="desc">距离结束还有</div>
+                        <div class="count-down">
+                            <span>00</span>                        <i>:</i>
+                            <span>59</span>
+                            <i>:</i>
+                            <span>59</span>
+                        </div>
+                    </div>
+                    <div class="wait-right">
+                        <ul>
+                            <li class="to_different" class="list-item" style="border-top: 1px solid #83c44e; margin-right: 14px;">
+                                <a href="">
+                                    <div style="margin: 0 37px 58px;">
+                                        <img class="list-pic" src="./images/s1.webp" alt="">
+                                    </div>
+                                    <h3>米家互联网洗烘一体机 Pro 10kg</h3>
+                                    <p class="introduce">智能洗烘，省心省力</p>
+                                    <p class="price">
+                                        <span>3299</span><span>元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="to_different" class="list-item" style="border-top: 1px solid#e53935; margin-right: 14px;">
+                                <a href="">
+                                    <div style="margin: 0 37px 58px;">
+                                        <img class="list-pic" src="./images/s2.webp" alt="">
+                                    </div>
+                                    <h3>米家互联网洗烘一体机 Pro 10kg</h3>
+                                    <p class="introduce">智能洗烘，省心省力</p>
+                                    <p class="price">
+                                        <span>3299</span><span>元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="to_different" class="list-item" style="border-top: 1px solid #ff6700; margin-right: 14px;">
+                                <a href="">
+                                    <div style="margin: 0 37px 58px;">
+                                        <img class="list-pic" src="./images/s1.webp" alt="">
+                                    </div>
+                                    <h3>米家互联网洗烘一体机 Pro 10kg</h3>
+                                    <p class="introduce">智能洗烘，省心省力</p>
+                                    <p class="price">
+                                        <span>3299</span><span>元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="to_different" class="list-item" style="border-top: 1px solid #00c0a5; ">
+                                <a href="">
+                                    <div style="margin: 0 37px 58px;">
+                                        <img class="list-pic" src="./images/s2.webp" alt="">
+                                    </div>
+                                    <h3>米家互联网洗烘一体机 Pro 10kg</h3>
+                                    <p class="introduce">智能洗烘，省心省力</p>
+                                    <p class="price">
+                                        <span>3299</span><span>元</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- 闪购下面图片 -->
+                <div class="bottom-pic">
+                    <a href="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e99b88a8a39fbbd55177aea30e640557.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 手机 -->
+            <div class="category-position">
+                <div>
+                    <h2>手机</h2>
+                    <div class="more">
+                        <a href="">查看全部
+                            <span class=" iconfont">&#xe626;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="phones">
+                    <div class="phones-pic move"><a href="#"><img
+                                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/574c6643ab91c6618bfb2d0e2c761d0b.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+                                alt=""></a>
+                    </div>
+                    <div>
+                        <ul class="phones-list">
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d880ff45a9a3b70527770e01521fc939.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>小米10 至尊版</h3>
+                                    <p class="introduce">120X 变焦/120W秒充/120Hz屏幕</p>
+                                    <p class="price">
+                                        <span>5299</span>元<span>起</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cf7a05df86a858a1f391a0378d8c27d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>Redmi K30S 至尊纪念版</h3>
+                                    <p class="introduce">144Hz[7档]变速高刷屏</p>
+                                    <p class="price">
+                                        <span>2599</span>元<span>起</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3b19bf0e7e599c1bbbce510fb0dbc8bc.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>Redmi K30 至尊版</h3>
+                                    <p class="introduce">120Hz弹出全面屏，天玑1000+旗舰处理器</p>
+                                    <p class="price">
+                                        <span>1999</span>元<span>起</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/237942bfcaf2bbe82fbe966c2f584d69.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>腾讯黑鲨3S</h3>
+                                    <p class="introduce">骁龙865处理器，120Hz刷新率</p>
+                                    <p class="price">
+                                        <span>3799</span>元<span>起</span>
+                                        <del>3999元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c892a7640f58032489cbff8a948b50f9.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>Redmi 9A</h3>
+                                    <p class="introduce">5000mAh长循环大电量，6.53"超大护眼屏幕</p>
+                                    <p class="price">
+                                        <span>599</span>元<span>起</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8729282b199b3ec51e31c1b6b15f3f93.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>小米10 青春版 5G</h3>
+                                    <p class="introduce">50倍潜望式变焦 / 轻薄5G手机</p>
+                                    <p class="price">
+                                        <span>1999</span>元<span>起</span>
+                                        <del>2299元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>小米10</h3>
+                                    <p class="introduce">骁龙865/1亿像素相机</p>
+                                    <p class="price">
+                                        <span>3799</span>元<span>起</span>
+                                        <del>3999元</del>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item move">
+                                <a href="">
+                                    <div>
+                                        <img class="list-pic"
+                                            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d037b19b924fdf15b1cc9e671d6628fe.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                                            alt="">
+                                    </div>
+                                    <h3>Redmi K30 Pro</h3>
+                                    <p class="introduce">双模5G，骁龙865，弹出全面屏</p>
+                                    <p class="price">
+                                        <span>2999</span>元<span>起</span>
+                                        <del>3699元</del>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-pic">
+                    <a href="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+</body>
+
+</html>

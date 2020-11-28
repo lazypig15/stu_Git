@@ -1,0 +1,36 @@
+<!-- 
+    time:2020-11-18
+    author:liu
+    coontent:css选择器问题
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* input输入框获取焦点触发的伪类 */
+    input[type='text']:focus{
+        outline: none;
+        appearance: none;
+        background-color: #ff6579;
+
+    }
+</style>
+<body>
+    <!-- css 选择器的作用？  常用的有哪些？ css3中新增了哪些内容 -->
+    <!-- 
+        作用：选中html元素进行样式设置
+        常用的：id class * 元素选择器 等
+        css3新增的：伪类选择器，(:hover  :checked :focus nth-type-of...)
+     -->
+
+     <!-- 
+         div:after 与 div::after区别   即伪元素与伪类选择器的区别是什么？
+        伪类选择器的作用：选中html添加样式
+        伪元素：是在元素前面或者后面添加一个元素，可以具备所有元素的特点。
+    -->
+</body>
+</html>

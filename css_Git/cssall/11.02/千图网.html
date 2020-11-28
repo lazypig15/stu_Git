@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千图网</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .container{
+        width: 292px;
+        height: 408px;
+        margin: 200px auto;
+        border-radius: 10px;
+    }
+    .container:hover{
+        border: 5px solid #b0b0b0;
+    }
+    .pics{
+        position: relative;
+        width: 276px;
+        height: 308px;
+        border-radius: 10px;
+        margin: 8px 8px 0;
+        overflow: hidden;
+    }
+    .hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 276px;
+        height: 308px;
+        border-radius: 10px;
+        margin: 8px 8px 0;
+        background-color: aqua;
+    }
+    .pics-div{
+        width: 552px;
+        height: 766px;
+        transform: rotate(30deg);
+        position: absolute;
+        top: -232px;
+        left: -151px;
+        animation: move 10s linear infinite;
+    }
+    @keyframes move {
+        0%{
+            top: -232;
+        }
+        25%{
+            top: -332px;
+        }
+        50%{
+            top: -232px;
+        }
+        75%{
+            top: -132px;
+        }
+        100%{
+            top: -232px;
+        }
+    }
+    .imgs{
+        width: 176px;
+        height: 250px;
+        padding: 0 8px 8px 0;
+        float: left;
+    }
+    .imgs>img{
+        float: left;
+        width: 176px;
+        height: 250px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="pics">
+            <div class="hover"></div>
+            <div class="pics-div">
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+                <div class="imgs"><img src="http://preview.qiantucdn.com/58pic/36/85/80/7958PIC58PICbZ0ccgXPCCm82_PIC2018.jpg!qt324new_nowater" alt=""></div>
+            </div>
+        </div>
+        <div class="text"></div>
+    </div>
+</body>
+</html>

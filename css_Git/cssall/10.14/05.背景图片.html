@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.背景图片</title>
+</head>
+    <style>
+        div{
+            width: 460px;
+            height: 300px;
+            border: aqua 10px solid;
+            margin: 100px auto 0;
+            /* 背景图片  url填写路劲 */
+            background-image: url('./images/s.jpg');
+            /* 当背景图片比容器大是只会显示左上角的内容*/ 
+             /*解决办法设置背景图片尺寸  */
+             background-size: 100% 100%;
+            /* background-size: 100% 160%; */
+            /* 移动背景图片的位置，第一个为水平移动  第二个为垂直移动 */
+            /* background-position: 0px -64px; */
+
+            /* 当背景图片比容器小时  图片默认填满整个容器 */
+            /* 如果只保留一张尺寸的原图片 */
+            /* background-repeat: no-repeat; */
+            /* background-position: center; */
+
+            
+         }
+           
+    </style>
+<body>
+    <div></div>
+</body>
+</html>

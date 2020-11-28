@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<style>
+    /* .box {
+        height: 200px;
+        background-color: #ff6700;
+        margin: 5px;
+    }
+    .box-in {
+        height: 100px;
+        background-color: aqua;
+        margin: 5px;
+        
+    } */
+    .box1,.box2 {
+        height: 700px;
+        border: 1px solid red;
+        margin: 20px;
+    }
+
+    .box_right {
+        height: 200px;
+        border: solid 1px blue;
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .box1 {
+            box-sizing: border-box;
+            height: 200px;
+            border: 1px solid red;
+            margin: 0px;
+        }
+        .box2{
+            box-sizing: border-box;
+            height: 100%;
+            border: 1px solid red;
+            margin: 0px;
+        }
+    }
+</style>
+
+<body>
+    <!-- 实现pc端与移动端不同的排版和布局 -->
+    <!-- 
+        栅格
+        1.栅格系统将父元素content等分位12分 
+        2.通过col-xs/sm/md/sm区分师徒长度
+        3.通过col-xs/sm/md/sm1~12将父元素等分为12分
+
+        col-md-12 在视图窗口大于992px时，设置元素的宽度为100%
+
+        源码：通过使用媒体查询设置宽度实现的栅格系统
+    -->
+    <!-- <main>
+        <div class="box  col-xs-12"></div>
+        <div class="box  col-xs-5">
+            <div class="box-in  col-xs-5"></div>
+            <div class="box-in  col-xs-5"></div>
+        </div>
+        <div class="box  col-xs-5 ">
+            <div class="box-in  col-xs-5"></div>
+            <div class="box-in  col-xs-5"></div>
+        </div>
+        <div class="box  col-xs-3"></div>
+        <div class="box  col-xs-3"></div>
+        <div class="box  col-xs-3"></div>
+        <div class="box  col-xs-2"></div>
+    </main> -->
+
+    <main>
+        <div class="col-sm-3 col-xs-12 box1"></div>
+        <div class="col-sm-8  col-xs-12 box2">
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+            <div class="col-sm-3 col-xs-12 box_right"></div>
+        </div>
+    </main>
+</body>
+
+</html>

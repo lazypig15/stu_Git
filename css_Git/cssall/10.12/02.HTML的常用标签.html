@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.HTML的常用标签</title>
+    <style>
+        #school{
+            height: 1000px;
+            background-color:aqua;
+        }
+        #home{
+            height: 1000px;
+            background-color: cadetblue;
+        }
+        img{
+            height: 200px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>块,用于划分区域</div>
+    <p>段落标签,用来存放一段文本</p>
+    <!-- h1~h6为标题标签,其字体由大到小,但是字体都是加粗的,用于显示页面正文标题 -->
+    <h1>标题标签</h1>
+    <h2>标题标签</h2>
+    <h3>标题标签</h3>
+    <h4>标题标签</h4>
+    <h5>标题标签</h5>
+    <h6>标题标签</h6>
+    <span>文本标签,用来存放文本,无特殊含义</span>
+    
+        <!-- 超链接标签,用来链接跳转其他地方(页面),href属性用于存放连接路径 -->
+    <a href="https://www.baidu.com/" target="_blank">百度一下,你就知道</a>
+
+    <!-- href属性后面存放#id名 ,此时a标签用于业内跳转 -->
+    <a href="#home">家乡</a>
+    <div id="school">学校</div>
+    <div id="home">家乡</div>
+
+    <!-- img标签,图片标签,用于才能放页面上的一张图片,src属性用于存放图片的地址或者链接路径 alt属性用于存放当图片不能正常显示时加载的说明性文字-->
+    <!-- img如果不设置宽高 那么宽高为图片本身的大小,如果同时设置图片的宽和高不成比例那么图片将会变形,如果只设置宽或高,那么对应的高或者宽将会等比例缩放 -->
+    <img src="./images/timg.jpg" alt="风景">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602497342863&di=3be2e2836b2b14db483954f92d220f85&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F22%2F59%2F19300001325156131228593878903.jpg" alt="日落">
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- 
+          border取值为空或者1 为1 表示数据表格 否则为布局表格
+          cellpadding='10'单元格填充 类似于设置表格上下左右内边距
+          summary摘要
+          rules 设置tr  td  边框可见性
+     -->
+    <table border="1" summary="学生信息表" width="500" cellspacing='0' cellpadding='10' rules='rows' frame='hsides'>
+        <!-- 表格标题标签自带居中 -->
+        <caption>
+            学生信息表
+        </caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>班级</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">*描述学生信息</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>男</td>
+                <td>20</td>
+                <td>软件251</td>
+            </tr>
+            <tr>
+                <td>赵四</td>
+                <td>女</td>
+                <td>18</td>
+                <td>软件252</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>男</td>
+                <td>21</td>
+                <td>软件257</td>
+            </tr>
+            <tr>
+                <td>田七</td>
+                <td>女</td>
+                <td>20</td>
+                <td>软件254</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- headers 根据单元格id 设置表头 -->
+    <table border="1" width="100%" cellspacing='0'>
+        <tr>
+            <th id="name">Name</td>
+            <th id="Email">Email</td>
+            <th id="Phone">Phone</td>
+            <th id="Address">Address</td>
+        </tr>
+        <tr>
+            <!-- rowspan 合并行 colspan合并列 -->
+            <td headers="name" rowspan="2">George Bush</td>
+            <td headers="Email"colspan="2">someone@example.com</td>
+            <!-- <td headers="Phone">+789451236</td> -->
+            <td headers="Address">Fifth Avenue New York,USA</td>
+        </tr>
+        <tr>
+            <!-- <td headers="name">George Bush</td> -->
+            <td headers="Email">someone@example.com</td>
+            <td headers="Phone">+789451236</td>
+            <td headers="Address">Fifth Avenue New York,USA</td>
+        </tr>
+    </table>
+    <br>
+    <table width="100%" border="1" cellspacing='0'>
+        <!-- col 列标签 可以设置列宽 -->
+        <col style="width: 20%; background-color: #ff6700;">
+        <col style="width: 30%; background-color: #2577e3;">
+        <col style="width: 40%; background-color: aqua;">
+        
+        <tr>
+            <td>ISBN</td>
+            <td>Title</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+    </table>
+    <br>
+    <table width="100%" border="1" cellspacing='0'>
+        <col style="background:none;">
+        <!-- <col style="background:none;"> -->
+        <colgroup span="2" style="background:rgba(0,0,100,.2);"></colgroup>
+        
+        <!-- col 只能设置一列的样式 -->
+        <!-- colgroup 设置第二列开始及后面的样式 (第一列已经由cols设置了样式)-->
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- 
+    表格总结：
+        1.border的取值和summary摘要最好要写 其中border的取值为1和空 取值为1时表示数据表格 为空时为布局表格。
+        2.cellspacing='0'设置为单实线  cellpadding='10'相当于设置单元格的内边距 rules设置边框可见性
+        3.表格的合并 rowspan合并行colspan合并列
+        4.设置的样式 col只能设置某一列的样式，colgroup设置未设置样式的某一列及以后n列的样式
+ -->
